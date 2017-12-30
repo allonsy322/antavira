@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./css/slick.css" />
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
@@ -15,6 +16,7 @@
     <script type="text/javascript" src="./vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
+    <script type="text/javascript" src="./js/slick.min.js"></script>
     <title>Blockchain, Risk Managment, Platform</title>
 </head>
 <body>
@@ -157,7 +159,7 @@
                 <div class="antavara_description">We aesigned the solution, that will help them all</div>
                 <div class="antavira_container">
                     <div class="av_schema"></div>
-                    <div class="av_item">
+                    <div class="av_item av_lenders">
                         <div class="avi_title">lenders</div>
                         <div class="avi_question">
                             <div class="qustion_ico"></div>
@@ -182,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="av_item">
+                    <div class="av_item av_credit">
                         <div class="avi_title">credit analysts</div>
                         <div class="avi_question">
                             <div class="qustion_ico"></div>
@@ -207,7 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="av_item">
+                    <div class="av_item av_risk">
                         <div class="avi_title">risk managmers</div>
                         <div class="avi_question">
                             <div class="qustion_ico"></div>
@@ -232,7 +234,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="av_item">
+                    <div class="av_item av_prova">
                         <div class="avi_title">data providers</div>
                         <div class="avi_question">
                             <div class="qustion_ico"></div>
@@ -588,12 +590,16 @@
                 <div class="news_title">News</div>
                 <div class="news_desc">You might have heard about us</div>
                 <div class="slides_container">
+                    <div class="nav_slode">
+                        <div class="ns_prev"></div>
+                        <div class="ns_next"></div>
+                    </div>
                     <div class="news_slider">
                         <div class="news_slide">
                             <div class="ns_img">
-                                <img src="" alt="">
+                                <img src="./img/news/26oc.png" alt="">
                             </div>
-                            <div class="ns_data">29.10.2017</div>
+                            <div class="ns_data">26.10.2017</div>
                             <div class="ns_info">
                                 Thank you, Toronto! Sibos-2017 was a great experience with highest concentration of
                                 finance professionals. See you next year!
@@ -601,7 +607,7 @@
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
-                                <img src="" alt="">
+                                <img src="./img/news/28no.png" alt="">
                             </div>
                             <div class="ns_data">28.11.2017</div>
                             <div class="ns_info">
@@ -611,7 +617,7 @@
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
-                                <img src="" alt="">
+                                <img src="./img/news/1dec.png" alt="">
                             </div>
                             <div class="ns_data">01.12.2017</div>
                             <div class="ns_info">
@@ -621,7 +627,7 @@
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
-                                <img src="" alt="">
+                                <img src="./img/news/29dec.png" alt="">
                             </div>
                             <div class="ns_data">29.12.2017</div>
                             <div class="ns_info">
@@ -631,7 +637,7 @@
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
-                                <img src="" alt="">
+                                <img src="./img/news/28no.png" alt="">
                             </div>
                             <div class="ns_data">28.11.2017</div>
                             <div class="ns_info">
@@ -641,7 +647,7 @@
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
-                                <img src="" alt="">
+                                <img src="./img/news/29dec.png" alt="">
                             </div>
                             <div class="ns_data">29.12.2017</div>
                             <div class="ns_info">
@@ -656,92 +662,136 @@
                 <div class="media_logo_container">
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/logocnews.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/vedomosti.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/swift.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/kommersant.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/bankir_ru.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/finextra.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="media_logo_container">
+                    <div class="media_block">
+                        <a href="">
+                            <img src="./img/media/rusbase.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/bankiru.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/kitay_2.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/future-bank.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/roem.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/moedelo-1.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/finparty.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/chinaru.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/firma.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/Vc.ru.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/lenta.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/skolkovo.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
                         <a href="">
-                            <img src="" alt="">
+                            <img src="./img/media/kitay_1.png" alt="">
+                        </a>
+                    </div>
+                </div>
+                <div class="media_logo_container">
+                    <div class="media_block">
+                        <a href="">
+                            <img src="./img/media/WB_logo.png.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media_block">
+                        <a href="">
+                            <img src="./img/media/it_weekly.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media_block">
+                        <a href="">
+                            <img src="./img/media/322.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media_block">
+                        <a href="">
+                            <img src="./img/media/clogo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media_block">
+                        <a href="">
+                            <img src="./img/media/Sputnik_logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media_block">
+                        <a href="">
+                            <img src="./img/media/228.png" alt="">
+                        </a>
+                    </div>
+                    <div class="media_block">
+                        <a href="">
+                            <img src="./img/media/1488.png" alt="">
                         </a>
                     </div>
                 </div>
@@ -752,147 +802,228 @@
                 <div class="team_title">Team</div>
                 <div class="team_description">You might have heard about us</div>
                 <div class="team_sliders_container">
+                    <div class="t_nav">
+                        <div class="t_prev"></div>
+                        <div class="t_next"></div>
+                    </div>
                     <div class="team_slider">
-                        <div class="team_slide">
                             <div class="photo_block">
-                                <img src="" alt="">
+                                <img src="./img/team/Maria Veikhman.jpg" alt="">
                                 <div class="photo_description">
                                     <div class="pd_name">Maria Veikhman</div>
                                     <div class="pd_dolz">CEO & Founder</div>
                                 </div>
                             </div>
                             <div class="photo_block">
-                                <img src="" alt="">
+                                <img src="./img/team/Eugene Irshinsky.jpg" alt="">
                                 <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_slide">
-                            <div class="photo_block">
-                                <img src="" alt="">
-                                <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
+                                    <div class="pd_name">Eugene Irshinsky</div>
+                                    <div class="pd_dolz">CBDO</div>
                                 </div>
                             </div>
                             <div class="photo_block">
-                                <img src="" alt="">
+                                <img src="./img/team/Alexei Chudinov.jpg" alt="">
                                 <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_slide">
-                            <div class="photo_block">
-                                <img src="" alt="">
-                                <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
+                                    <div class="pd_name">Alexei Chudinov</div>
+                                    <div class="pd_dolz">CTO</div>
                                 </div>
                             </div>
                             <div class="photo_block">
-                                <img src="" alt="">
+                                <img src="./img/team/Danil Sherstobitov.jpg" alt="">
                                 <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_slide">
-                            <div class="photo_block">
-                                <img src="" alt="">
-                                <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
+                                    <div class="pd_name">Danil Sherstobitov</div>
+                                    <div class="pd_dolz">Risk Director</div>
                                 </div>
                             </div>
                             <div class="photo_block">
-                                <img src="" alt="">
+                                <img src="./img/team/Mariya Boldi.jpg" alt="">
                                 <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_slide">
-                            <div class="photo_block">
-                                <img src="" alt="">
-                                <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
+                                    <div class="pd_name">Mariya Boldi</div>
+                                    <div class="pd_dolz">PR manager</div>
                                 </div>
                             </div>
                             <div class="photo_block">
-                                <img src="" alt="">
+                                <img src="./img/team/Olga Telicina.jpg" alt="">
                                 <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="team_slide">
-                            <div class="photo_block">
-                                <img src="" alt="">
-                                <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
+                                    <div class="pd_name">Olga Telicina</div>
+                                    <div class="pd_dolz">Head of Analytics</div>
                                 </div>
                             </div>
                             <div class="photo_block">
-                                <img src="" alt="">
+                                <img src="./img/team/Anna Palkina.jpg" alt="">
                                 <div class="photo_description">
-                                    <div class="pd_name">Maria Veikhman</div>
-                                    <div class="pd_dolz">CEO & Founder</div>
+                                    <div class="pd_name">Anna Palkina</div>
+                                    <div class="pd_dolz">Project Manager</div>
                                 </div>
                             </div>
-                        </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Andrey Mulenko.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Andrey Mulenkon</div>
+                                    <div class="pd_dolz">Business Analyst</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Ruben Yakunchev.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Ruben Yakunchev</div>
+                                    <div class="pd_dolz">Software Engineer</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Lei Chen.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Lei Chen</div>
+                                    <div class="pd_dolz">Representative in China</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Semen Kolominsky.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Semen Kolominsky</div>
+                                    <div class="pd_dolz">Software Engineer</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Pavel Larionov.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Pavel Larionov</div>
+                                    <div class="pd_dolz">Software Engineer</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Michael Esutin.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Michael Esutin</div>
+                                    <div class="pd_dolz">Software Engineer</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Karine Sukiasyan.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Karine Sukiasyan</div>
+                                    <div class="pd_dolz">Credit Analyst</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Alexander Slavnov.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Alexander Slavnov</div>
+                                    <div class="pd_dolz">Statistical analysys specialist</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Olga Stepanova.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Olga Stepanova</div>
+                                    <div class="pd_dolz">Statistical analysys specialist</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Vladimir Kim.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Vladimir Kim</div>
+                                    <div class="pd_dolz">Statistical analysys specialist</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Sergey Okulov.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Sergey Okulov</div>
+                                    <div class="pd_dolz">Head of Sales</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Maxim Naumenko.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Maxim Naumenko</div>
+                                    <div class="pd_dolz">Sales manager</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Yulia Sharapova.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Yulia Sharapova</div>
+                                    <div class="pd_dolz">Administrator</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Hu Chao.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Hu Chao</div>
+                                    <div class="pd_dolz">Mobile Developer</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Daria Petkova.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Daria Petkova</div>
+                                    <div class="pd_dolz">Translator</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Tatiana Dzhumanova.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Tatiana Dzhumanova</div>
+                                    <div class="pd_dolz">Accountant</div>
+                                </div>
+                            </div>
+                            <div class="photo_block">
+                                <img src="./img/team/Yulia Shilyaeva.jpg" alt="">
+                                <div class="photo_description">
+                                    <div class="pd_name">Yulia Shilyaeva</div>
+                                    <div class="pd_dolz">Designer</div>
+                                </div>
+                            </div>
+
                     </div>
                 </div>
                 <div class="advisors_title">Advisors</div>
                 <div class="advisors_desc">you might have heard about us</div>
                 <div class="advisors_sliders_container">
+                    <div class="nav_pk">
+                        <div class="pk_next"></div>
+                        <div class="pk_prev"></div>
+                    </div>
                     <div class="advisors_dlider">
                         <div class="advisor_slide">
                             <div class="as_photo">
-                                <img src="" alt="">
+                                <img src="./img/team/TBA.jpg" alt="">
                             </div>
                             <div class="as_name"></div>
                             <div class="as_post"><span></span></div>
                         </div>
                         <div class="advisor_slide">
                             <div class="as_photo">
-                                <img src="" alt="">
+                                <img src="./img/team/investor.jpg" alt="">
                             </div>
                             <div class="as_name">Alexey lykov</div>
                             <div class="as_post">Co-founder, <span>CTO Playkey</span></div>
                         </div>
                         <div class="advisor_slide">
                             <div class="as_photo">
-                                <img src="" alt="">
+                                <img src="./img/team/TBA.jpg" alt="">
                             </div>
                             <div class="as_name"></div>
                             <div class="as_post"><span></span></div>
                         </div>
                         <div class="advisor_slide">
                             <div class="as_photo">
-                                <img src="" alt="">
+                                <img src="./img/team/TBA.jpg" alt="">
                             </div>
                             <div class="as_name"></div>
                             <div class="as_post"><span></span></div>
                         </div>
                         <div class="advisor_slide">
                             <div class="as_photo">
-                                <img src="" alt="">
+                                <img src="./img/team/investor.jpg" alt="">
                             </div>
                             <div class="as_name">Alexey lykov</div>
                             <div class="as_post">Co-founder, <span>CTO Playkey</span></div>
                         </div>
                         <div class="advisor_slide">
                             <div class="as_photo">
-                                <img src="" alt="">
+                                <img src="./img/team/TBA.jpg" alt="">
                             </div>
                             <div class="as_name"></div>
                             <div class="as_post"><span></span></div>
@@ -905,40 +1036,39 @@
             <div class="container">
                 <div class="partners_title">Partners</div>
                 <div class="partners_desc">You might have heard about us</div>
-                <div class="partner">
-                    <img src="" alt="">
-                    <div class="partner_desc">Cloud computing service for building, testing, deploying, and managing
-                        applications and services through a global network of data centers.
+                <div class="partners_container">
+                    <div class="partner">
+                        <img src="./img/parthners/smart.jpg" alt="">
+                        <div class="partner_desc">Cloud computing service for building, testing, deploying, and managing
+                            applications and services through a global network of data centers.
+                        </div>
                     </div>
-                </div>
-                <div class="partner">
-                    <img src="" alt="">
-                    <div class="partner_desc">Cloud computing service for building, testing, deploying, and managing
-                        applications and services through a global network of data centers.
+                    <div class="partner">
+                        <img src="./img/parthners/inspeer.jpg" alt="">
+                        <div class="partner_desc">A peer-to-peer lending service that works with cryptocurrency and fiat
+                        </div>
                     </div>
-                </div>
-                <div class="partner">
-                    <img src="" alt="">
-                    <div class="partner_desc">Cloud computing service for building, testing, deploying, and managing
-                        applications and services through a global network of data centers.
+                    <div class="partner">
+                        <img src="./img/parthners/Equifax.jpg" alt="">
+                        <div class="partner_desc">Consumer credit reporting agency that collects and aggregates information
+                            on over 800 million individual consumers and more than 88 million businesses worldwide
+                        </div>
                     </div>
-                </div>
-                <div class="partner">
-                    <img src="" alt="">
-                    <div class="partner_desc">Cloud computing service for building, testing, deploying, and managing
-                        applications and services through a global network of data centers.
+                    <div class="partner">
+                        <img src="./img/parthners/scorista.jpg" alt="">
+                        <div class="partner_desc">First risk management team on ANTAVIRA platform
+                        </div>
                     </div>
-                </div>
-                <div class="partner">
-                    <img src="" alt="">
-                    <div class="partner_desc">Cloud computing service for building, testing, deploying, and managing
-                        applications and services through a global network of data centers.
+                    <div class="partner">
+                        <img src="./img/parthners/skolkovo.jpg" alt="">
+                        <div class="partner_desc">Innovation center that aims to nurture development in IT, biomedical, energy, nuclear, and space sectors. Russian “Silicon Valley”.
+                        </div>
                     </div>
-                </div>
-                <div class="partner">
-                    <img src="" alt="">
-                    <div class="partner_desc">Cloud computing service for building, testing, deploying, and managing
-                        applications and services through a global network of data centers.
+                    <div class="partner">
+                        <img src="./img/parthners/smart.jpg" alt="">
+                        <div class="partner_desc">Company aimed at developing systems for image processing and character
+                            recognition in a video stream.
+                        </div>
                     </div>
                 </div>
             </div>
@@ -952,41 +1082,34 @@
                     <div class="qa">
                         <div class="qa_qustion">Is the blockchain of ANTAVIRA public?</div>
                         <div class="qa_answer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Accusamus architecto autem dolores, eaque eum exercitationem, id ipsum minus placeat porro
-                            quas tempora ut vel, voluptas voluptatem. Amet iste natus praesentium?
+                            Our blockchain is public and all our codebase will be open source.
                         </div>
                     </div>
                     <div class="qa">
                         <div class="qa_qustion">When the token sale will start?</div>
                         <div class="qa_answer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Accusamus architecto autem dolores, eaque eum exercitationem, id ipsum minus placeat porro
-                            quas tempora ut vel, voluptas voluptatem. Amet iste natus praesentium?
+                            We are planning to start the token sale in February 2018. Subscribe to our newsletter to
+                            receive latest updates.
                         </div>
                     </div>
                     <div class="qa">
                         <div class="qa_qustion">Will additional ANTA tokens be issued after the ICO ends?</div>
                         <div class="qa_answer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Accusamus architecto autem dolores, eaque eum exercitationem, id ipsum minus placeat porro
-                            quas tempora ut vel, voluptas voluptatem. Amet iste natus praesentium?
+                            No, the tokens are issued only once. No additional emission is possible.
                         </div>
                     </div>
                     <div class="qa">
                         <div class="qa_qustion">How the ANTA tokens will be issued?</div>
                         <div class="qa_answer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Accusamus architecto autem dolores, eaque eum exercitationem, id ipsum minus placeat porro
-                            quas tempora ut vel, voluptas voluptatem. Amet iste natus praesentium?
+                            ANTAVIRA token sale will be held through ERC20 smart contract. ICO participants will be
+                            able to retrieve ETH from token sale smart contract if ANTAVIRA will not reach the Soft Cap.
                         </div>
                     </div>
                     <div class="qa">
                         <div class="qa_qustion">On which exchanges the ANTA token will be traded?</div>
                         <div class="qa_answer">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Accusamus architecto autem dolores, eaque eum exercitationem, id ipsum minus placeat porro
-                            quas tempora ut vel, voluptas voluptatem. Amet iste natus praesentium?
+                            We are actually in discussion with several exchanges right now. Subscribe to our newsletter
+                            to receive latest updates.
                         </div>
                     </div>
                 </div>
@@ -1004,7 +1127,7 @@
                 <div class="container">
                     <div class="foot_copyright">
                         <div class="powered">Powered by</div>
-                        <div class="reserved">2017c All rights reserved</div>
+                        <div class="reserved">2017© All rights reserved</div>
                     </div>
                     <div class="foot_soc">
                         <div class="main_soc m_facebook"><a href="#" rel="nofollow" target="_blank"></a></div>
@@ -1025,6 +1148,27 @@
                 anchors: ['onePage', 'twoPage', 'threePage', 'fourPage', 'fivePage','sixPage','sevenPage','eightPage', 'ninePage', 'tenPage', 'elevenPage', 'twelvePage'],
                 menu: '#menu',
                 css3:true
+            });
+            $('.news_slider').slick({
+                infinite: true,
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                prevArrow: '.ns_prev',
+                nextArrow: '.ns_next'
+            });
+            $('.team_slider').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                prevArrow: '.t_prev',
+                nextArrow: '.t_next'
+            });
+            $('.advisors_dlider').slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                prevArrow: '.pk_prev',
+                nextArrow: '.pk_next'
             });
         });
     </script>

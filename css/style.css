@@ -24,13 +24,14 @@
     padding: 0;
 }
 html body {
-    font-family: "Gotham";
     font-family: Gotham;
 }
 header {
     position: fixed;
     z-index: 322;
-    width:100%;
+    margin: 0 auto;
+    left: 50%;
+    transform: translate(-50%);
 }
 ul.menu{
     width: 1170px;
@@ -43,7 +44,6 @@ ul.menu{
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     text-align: center;
-    font-family: 'Open Sans', sans-serif;
     position: relative;
 }
 .menu li {
@@ -56,20 +56,7 @@ ul.menu{
     padding: 10px 17px;
     display: inline-block;
     position: relative;
-    font-size: 16px;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 300;
-    transition-delay: 300ms;
-}
-.fp-viewing-onePage ul.menu li a:hover,
-.fp-viewing-onePage ul.menu li.active a,
-.fp-viewing-fivePage ul.menu li a:hover,
-.fp-viewing-fivePage ul.menu li.active a,
-ul.menu li a:hover,
-ul.menu li.active a{
-    color: #008a55;
+    font-size: 15px;
     text-decoration: none;
 }
 ul.menu li a::before,
@@ -110,9 +97,22 @@ ul.menu li a:hover::after, ul.menu li.active a::after {
 }
 .fp-viewing-onePage ul.menu li a,
 .fp-viewing-twoPage ul.menu li a,
-.fp-viewing-fivePage ul.menu li a {
-    color:#d6d6d6;
+.fp-viewing-fivePage ul.menu li a,
+.fp-viewing-threePage ul.menu li a,
+.fp-viewing-fourPage ul.menu li a {
+    color: #fff;
     transition-delay: 300ms;
+}
+.fp-viewing-onePage ul.menu li a:hover,
+.fp-viewing-onePage ul.menu li.active a,
+.fp-viewing-fivePage ul.menu li a:hover,
+.fp-viewing-fivePage ul.menu li.active a,
+.fp-viewing-twoPage ul.menu li.active a
+.fp-viewing-twoPage ul.menu li a:hover,
+ul.menu li a:hover,
+ul.menu li.active a{
+    color: #008a55;
+    text-decoration: none;
 }
 section.home_section {
     background: #141414;
@@ -132,7 +132,7 @@ section.home_section:before {
     background-image: url(../img/back_left.png);
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 977px;
+    background-size: cover;
     z-index: 0;
 }
 section.home_section:after {
@@ -145,7 +145,7 @@ section.home_section:after {
     background-image: url(../img/back_right.png);
     background-repeat: no-repeat;
     background-position: left;
-    background-size: 977px;
+    background-size: cover;
     z-index: 0;
 }
 ul.menu:before {
@@ -160,7 +160,9 @@ ul.menu:before {
 }
 .fp-viewing-onePage ul.menu:before,
 .fp-viewing-twoPage ul.menu:before,
-.fp-viewing-fivePage ul.menu:before {
+.fp-viewing-fivePage ul.menu:before,
+.fp-viewing-threePage ul.menu:before,
+.fp-viewing-fourPage ul.menu:before {
     background-image: url(../img/logo_white.png);
 }
 .home_left {
@@ -204,7 +206,6 @@ div.cursor {
 html body {
     color: #e4e4e4;
     line-height: 1.2;
-    min-width: 1170px;
 }
 .home_ico {
     padding: 30px 0px 30px 80px;
@@ -227,15 +228,6 @@ html body {
     position: relative;
     display: inline-block;
 }
-.home_copyright:after {
-    content: '';
-    position: absolute;
-    right: -120px;
-    top: 3px;
-    width: 109px;
-    height: 18px;
-    background-image: url(../img/scorista.png);
-}
 .trill {
     font-size: 23px;
     color: #008a55;
@@ -256,6 +248,7 @@ html body {
     font-size: 14px;
     text-align: justify;
     text-transform: uppercase;
+    letter-spacing: 5px;
 }
 .form_subscribe_title {
     font-size: 16px;
@@ -279,6 +272,7 @@ input.fs_inputs {
     font-size: 15px;
     display: inline-block;
     padding: 10px 40px;
+    border: none;
 }
 .join_submit:hover {
     cursor: pointer;
@@ -301,7 +295,7 @@ input.fs_inputs {
     top: 30px;
     width: 443px;
     height: 863px;
-    background: url(../img/Maria.png);
+    background-image: url(../img/Maria.png);
 }
 .main_soc {
     width: 30px;
@@ -396,6 +390,7 @@ input.fs_inputs {
     position: absolute;
     font-weight: 600;
     text-transform: uppercase;
+    width: 287px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -422,9 +417,6 @@ input.fs_inputs {
 }
 .title_platform:before {
     color:#141414;
-}
-.title_ico {
-    transform: translate(-150%, -50%);
 }
 .title_ico:hover::before, .title_platform:hover::before {
     background: #141414;
@@ -564,7 +556,7 @@ li {
 section.antavira_section {
     background-image: url(../img/green_back.jpg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     background-position: center;
 }
 .antavira_title {
@@ -630,6 +622,7 @@ section.innovations_section {
     vertical-align: middle;
     padding: 3px;
     position: relative;
+    box-sizing: border-box;
 }
 .inn_title {
     font-size: 20px;
@@ -641,6 +634,7 @@ section.innovations_section {
     position: relative;
 }
 .lr_active .inn_contr {
+    margin-right: -2px;
     border: 1px dashed rgba(255,255,255, 0.5);
 }
 .inn_contr:hover {
@@ -650,25 +644,22 @@ section.innovations_section {
     content: '';
     width: 672px;
     height: 1px;
-    left: -173px;
+    left: -175px;
     top: calc(50% - 2px);
     border: 0.5px dashed rgba(255,255,255, 0.4);
     position: absolute;
     z-index: 1;
 }
-.inn_cash {
+.lr_active .ico_inn {
     background-image: url(../img/inn_polygon.png);
 }
-.ico_inn.inn_medal {
+.lr_active .inn_medal {
     background-image: url(../img/inn_medal.png);
-}
-.inn_eco {
-    background-image: url(../img/inn_eco.png);
 }
 .ilb_row {
     padding: 15px 0 15px 45px;
 }
-.lr_active .ico_inn:before {
+.ico_inn:before {
     width: 93px;
     height: 105px;
     content: '';
@@ -688,11 +679,13 @@ section.innovations_section {
     font-size: 16px;
     margin-bottom: 30px;
     font-family: Gotham;
+    font-style: initial;
 }
 .inn_content {
     background: rgba(0,138,85, 0.7);
     padding: 90px 25px 30px;
     position: relative;
+    height: 390px;
 }
 .inn_content:before {
     content: '';
@@ -887,6 +880,7 @@ section.campaing_section {
 .tokens_container {
     text-align: center;
     color: #fff;
+    position: relative;
 }
 .green_line_row {
     display: table;
@@ -1145,12 +1139,15 @@ p.cdd {
     text-align: left;
     background: url(../img/popup_right_back.png);
     color: #0d0d0d;
+    background-position: -8px;
+    background-size: 100%;
     background-repeat: no-repeat;
     padding: 17px 20px 15px 30px;
-    right: 17px;
-    bottom: -125px;
+    right: 13px;
+    bottom: -172px;
+    width: 287px;
+    height: 175px;
 }
-
 .qustion_ico {
     width: 29px;
     height: 34px;
@@ -1238,6 +1235,7 @@ p.cdd {
     margin-right: 15px;
     height: 303px;
     margin-bottom: 30px;
+    position: relative;
 }
 .news_title {
     font-size: 40px;
@@ -1441,9 +1439,6 @@ p.cdd {
     left: auto;
     right: 50px;
 }
-.container {
-    width: 1170px;
-}
 .partner {
     display: inline-block;
     margin-right: 30px;
@@ -1504,7 +1499,7 @@ p.cdd {
     font-size: 17px;
     color: #0d0d0d;
     text-align: center;
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 .qa_title, .smf_title {
     font-size: 18px;
@@ -1516,6 +1511,8 @@ p.cdd {
 }
 .qa_answer {
     display: none;
+    max-width: 514px;
+    padding: 13px 35px 13px 20px;
 }
 .questions_answ {
     float: left;
@@ -1523,12 +1520,13 @@ p.cdd {
 .qa {
     color: #0d0d0d;
     font-size: 16px;
+    border: 1px dashed #999999;
+    margin-bottom: 10px;
 }
 .qa_qustion {
     padding: 13px 35px 13px 20px;
-    border: 1px dashed #999999;
-    margin-bottom: 10px;
     position: relative;
+    width: 514px;
 }
 .qa_qustion:hover {
     cursor: pointer;
@@ -1572,13 +1570,14 @@ form.send_message {
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-    right: 8px;
-    width: 20px;
-    height: 20px;
+    right: 11px;
+    width: 15px;
+    height: 8px;
     background-image: url(../img/faq_arrow.png);
     background-repeat: no-repeat;
     background-size: 15px;
-    background-position: 1px;
+    background-position: 0px;
+    transition: transform 200ms;
 }
 footer {
     width: 100%;
@@ -1601,18 +1600,8 @@ footer {
 }
 .powered {
     display: inline-block;
-    padding-right: 200px;
     position: relative;
     font-size: 18px;
-}
-.powered:after {
-    content: '';
-    position: absolute;
-    right: 85px;
-    top: 0px;
-    width: 109px;
-    height: 18px;
-    background-image: url(../img/scorista.png);
 }
 .reserved {
     display: inline-block;
@@ -1624,4 +1613,1034 @@ footer {
     left: -41px;
     font-size: 27px;
     top: -6px;
+}
+ul.selected_lang {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -10px;
+    list-style-type: none;
+    color: #0d0d0d;
+    background: #fff;
+    margin-bottom: 0;
+}
+.languages {
+    position: absolute;
+    right: -4px;
+    top: 50%;
+    font-size: 15px;
+    padding: 0 18px 12px 0;
+}
+.languages:after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 2px;
+    width: 12px;
+    height: 11px;
+    background: url(../img/lang_arrow.png);
+}
+.languages:hover {
+    cursor: pointer;
+}
+ul.selected_lang li {
+    padding: 4px 20px 4px 10px;
+}
+ul.selected_lang li.l_active {
+    color: #008a55;
+}
+ul.selected_lang li:hover {
+    background: #0d0d0d;
+    color: #fff;
+}
+ul.selected_lang li.l_active:hover {
+    color: #008a55;
+}
+.languages:hover .selected_lang {
+    display: block;
+}
+.fp-viewing-sixPage .languages,
+.fp-viewing-sevenPage .languages,
+.fp-viewing-eightPage .languages,
+.fp-viewing-ninePage .languages,
+.fp-viewing-tenPage .languages,
+.fp-viewing-elevenPage .languages,
+.fp-viewing-twelvePage .languages {
+    color:#0d0d0d;
+}
+.fp-viewing-sixPage .languages:after,
+.fp-viewing-sevenPage .languages:after,
+.fp-viewing-eightPage .languages:after,
+.fp-viewing-ninePage .languages:after,
+.fp-viewing-tenPage .languages:after,
+.fp-viewing-elevenPage .languages:after,
+.fp-viewing-twelvePage .languages:after {
+    background: url(../img/lang_arrowb.png);
+}
+.received {
+    color: #0d0d0d;
+    text-align: left;
+    position: absolute;
+    top: 32%;
+    right: -100px;
+    transform: translate(0, -50%);
+}
+.cash {
+    font-size: 50px;
+    font-weight: 600;
+    padding-left: 37px;
+    background-image: url(../img/dolla.png);
+    background-repeat: no-repeat;
+    background-position: 4px 8px;
+}
+.priv {
+    font-size: 28px;
+}
+.rece {
+    font-size: 51px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #008a55;
+}
+.slideDown:after {
+    transform: rotate(-180deg);
+    transform-origin: center center;
+    transition: transform 200ms;
+}
+.inn_medal:before {
+    background-image: url(../img/inn_medal.png);
+}
+.inn_eco:before {
+    background-image: url(../img/inn_eco.png);
+}
+.nom_title a {
+    color: #008a55;
+    text-decoration: none;
+}
+.nom_local a {
+    color: #0d0d0d;
+    text-decoration: none;
+}
+.as_post span a {
+    color: #0d0d0d;
+    text-decoration: none;
+}
+.news_slide a {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+.platform a, .ico a {
+    position:absolute;
+    width: 280px;
+    height: 60px;
+    z-index: 10;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media screen and (max-height:800px){
+    .white_word {
+        font-size: 30px;
+    }
+    .green_word {
+        font-size: 36px;
+    }
+    .main_standart {
+        font-size: 27px;
+    }
+    .main_title {
+        margin-bottom: 0%;
+        margin-top: 22%;
+    }
+    .rm {
+        margin-bottom: 7%;
+        margin-top: 18%;
+    }
+    .form_sub {
+        margin-bottom: 10%;
+    }
+    .home_socials {
+        margin-top: 10%;
+    }
+    .home_ico {
+        padding: 20px 0px 20px 62px;
+        background-size: 47px;
+    }
+    .home_copyright {
+        margin-top: 10%;
+    }
+    .platform:after {
+        font-size: 180px;
+    }
+    .ico:after {
+        font-size: 180px;
+    }
+    .home_left:after {
+        background-size: 354px;
+        width: 354px;
+        background-repeat: no-repeat;
+    }
+    .all_problems {
+        margin-top: 60px;
+    }
+    .problema {
+        margin-bottom: 57px;
+    }
+    .problems_title {
+        margin-bottom: 23px;
+    }
+    .av_schema {
+        width: 360px;
+        height: 360px;
+    }
+    .innovations_description {
+        margin-bottom: 29px;
+    }
+    .inn_content {
+        padding: 56px 25px 5px;
+    }
+    .ico_inn {
+        width: 85px;
+        height: 77px;
+    }
+    .ico_inn:before {
+        width: 58px;
+        height: 62px;
+        background-size: cover;
+    }
+    .ico_inn {
+        background-size: cover;
+        width: 58px;
+        height: 62px;
+    }
+    .innovations_title {
+        margin-bottom: 0px;
+        margin-top: 45px;
+    }
+    .anta_take, .above_will {
+        padding: 9px 25px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .use_anta {
+        padding: 15px 25px 0px 25px;
+        margin-bottom: 10px;
+    }
+    .tlb_title {
+        font-size: 100px;
+    }
+    .diagram {
+        width: 128px;
+        height: 128px;
+        background-size: cover;
+    }
+    .proc {
+        font-size: 16px;
+    }
+    .proc_item {
+        margin-bottom: 10px;
+    }
+    .token_leftblock {
+        padding-left: 191px;
+    }
+    .proc_des {
+        font-size: 10px;
+    }
+    .gr_item {
+        padding: 5px 10px;
+    }
+    .grl_item {
+        padding: 10px 5px 5px 5px;
+        width: 104px;
+    }
+    .grl_anta {
+        margin-bottom: 9px;
+    }
+    .grl_eth {
+        margin-bottom: 9px;
+    }
+    .grl_anta:after {
+        display: none;
+    }
+    .grl_eth:after {
+        display: none;
+    }
+    .br_item {
+        padding: 5px 18px 5px 18px;
+    }
+    .opacity_block {
+        padding: 9px 35px 15px 20px;
+        width: 730px;
+        display: none;
+    }
+    .experience_title {
+        margin-bottom: 5px;
+    }
+    .experience_desc {
+        margin-bottom: 34px;
+    }
+    .cf_item {
+        margin-bottom: 30px;
+    }
+    .cs_logo {
+        margin-bottom: 20px;
+    }
+    .company_desc {
+        padding: 10px 18px;
+    }
+    .nom_item {
+        margin-bottom: 10px;
+    }
+    .nom_logo img {
+        width: 50px;
+    }
+    .ns_img {
+        height: 91px;
+        overflow: hidden;
+    }
+    .media_block img {
+        max-width: 60px;
+    }
+    .news_slide {
+        margin-bottom: -24px;
+    }
+    .ns_prev, .ns_next {
+        left: -39px;
+    }
+    .nav_slode .ns_next {
+        right: -30px;
+        left: auto;
+    }
+    .news_desc {
+        margin-bottom: 17px;
+    }
+    .news_title {
+        margin-bottom: 10px;
+        margin-top: 50px;
+    }
+    .photo_block img {
+        width: 65%;
+        margin: 0 auto;
+    }
+    .team_title {
+        margin-bottom: 0px;
+        margin-top: 50px;
+    }
+    .advisors_title {
+        margin-top: 15px;
+        margin-bottom: 6px;
+    }
+    .as_photo {
+        max-height: 162px;
+        overflow: hidden;
+    }
+    .as_name {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .advisors_desc {
+        display: none;
+    }
+    .partner {
+        margin-bottom: 25px;
+    }
+    .partners_desc {
+        margin-bottom: 19px;
+    }
+    .partners_title {
+        margin-top: 50px;
+    }
+    .faq_disc {
+        margin-bottom: 20px;
+    }
+    .faq_title {
+        margin-bottom: 5px;
+        margin-top: -50px;
+    }
+    textarea {
+        height: 62px;
+    }
+    footer {
+        padding: 12px 0 5px;
+    }
+}
+@media screen and (max-width:1199px){
+    ul.menu:before {
+        background-size: 100%;
+        width: 80px;
+        height: 41px;
+        background-repeat: no-repeat;
+        top: 28px;
+    }
+    .home_left:after {
+        background-size: 273px;
+        width: 290px;
+        top: 90px;
+        right: -250px;
+        background-repeat: no-repeat;
+    }
+    .platform:after {
+        font-size: 116px;
+    }
+    .p_title {
+        font-size: 23px;
+    }
+    .triangle:before, .rhomb:before, .circle:before, .square:before {
+        left: 15px;
+        top: -23px;
+        width: 80px;
+        height: 80px;
+        background-size: 80px;
+    }
+    .problema {
+        padding-left: 109px;
+    }
+    .av_credit {
+        top: 30px;
+        right: 35px;
+    }
+    .av_prova {
+        bottom: 30px;
+        right: 35px;
+    }
+    .av_lenders {
+        top: 30px;
+        left: 130px;
+    }
+    .av_risk {
+        bottom: 30px;
+        left: 30px;
+    }
+    .av_schema {
+        width: 350px;
+        height: 361px;
+    }
+    .antavara_description {
+        margin-bottom: -16px;
+    }
+    .inn_title {
+        font-size: 14px;
+    }
+    .lr_active .inn_contr:before {
+        width: 519px;
+        left: -137px;
+    }
+    .token_leftblock {
+        padding-left: 115px;
+    }
+    .use_anta p {
+        line-height: 1.2;
+    }
+    .curs {
+        padding: 20px;
+    }
+    .use_anta {
+        padding: 15px 15px 0px 15px;
+    }
+    .token_title {
+        font-size: 30px;
+        margin-bottom: 10px;
+        margin-top: 65px;
+    }
+    .token_description {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+    .gr_item {
+        padding: 5px 0px;
+    }
+    .grl_item {
+        padding: 10px 0px 5px;
+        width: 86px;
+    }
+    .grey_row {
+        width: 602px;
+    }
+    .grl_label, .gr_label, .br_label, .ob_label {
+        font-size: 16px;
+        left: -202px;
+    }
+    .blue_row {
+        width: 602px;
+    }
+    .campaing_title {
+        font-size: 30px;
+    }
+    .column_second {
+        width: 373px;
+        margin-right: 20px;
+    }
+    .column_first {
+        margin-right: 14px;
+    }
+    .cs_logo {
+        height: 64px;
+    }
+    .cf_item {
+        padding: 23px 9px;
+    }
+    .cf_item {
+        width: 274px;
+    }
+    p.cdd {
+        margin-bottom: 21px;
+        line-height: 1.3;
+    }
+    .cf_item {
+        margin-bottom: 50px;
+    }
+    .experience_desc {
+        font-size: 15px;
+    }
+    .experience_title {
+        font-size: 30px;
+        margin-top: 75px;
+    }
+    .news_title {
+        font-size: 30px;
+        margin-top: 76px;
+    }
+    .news_desc {
+        font-size: 15px;
+    }
+    .as_photo {
+        max-height: 162px;
+        overflow: hidden;
+    }
+    .as_name {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .advisors_desc {
+        display: none;
+    }
+    .partner {
+        margin-bottom: 25px;
+    }
+    .partners_desc {
+        margin-bottom: 19px;
+    }
+    .partners_title {
+        margin-top: 50px;
+    }
+    .faq_disc {
+        margin-bottom: 20px;
+    }
+    .partner {
+        width: 31%;
+        float: left;
+    }
+    .qa_qustion {
+        width: 524px;
+    }
+    .send_message_form {
+        margin-left: 26px;
+    }
+    .faq_title {
+        font-size: 30px;
+    }
+    .faq_disc {
+        font-size: 15px;
+    }
+    .column_first .cf_item:last-child {
+        margin-bottom: 0;
+    }
+    .photo_description {
+        padding-top: 45px;
+    }
+    .grl_anta {
+        font-size: 14px;
+    }
+    .grl_eth {
+        font-size: 15px;
+    }
+    .grl_proc {
+        font-size: 20px;
+    }
+    .gr_price {
+        font-size: 16px;
+    }
+}
+@media screen and (max-width:991px){
+    .home_left:after {
+        display: none;
+    }
+    .menu li a {
+        padding: 10px 0px;
+    }
+    .main_title {
+        margin-top: 30px;
+    }
+    .rm {
+        margin-top: 30px;
+    }
+    .av_lenders {
+        top: -90px;
+        left: 173px;
+    }
+    .av_risk {
+        bottom: -152px;
+        left: 74px;
+    }
+    .av_credit {
+        top: -90px;
+        right: 69px;
+    }
+    .av_prova {
+        bottom: -155px;
+        right: 75px;
+    }
+    .p_title {
+        font-size: 16px;
+    }
+    .problema {
+        padding-left: 97px;
+        width: 49%;
+    }
+    .triangle:before, .rhomb:before, .circle:before, .square:before {
+        left: 7px;
+    }
+    .av_schema {
+        width: 487px;
+        height: 470px;
+        margin-top: 133px;
+    }
+    .antavira_title {
+        margin-top: -160px;
+    }
+    .innovations_description {
+        margin-bottom: 38px;
+    }
+    .inn_right_block {
+        display: block;
+        text-align: right;
+        margin-top: 20px;
+    }
+    .irb_contr {
+        margin: 0 0 15px auto;
+    }
+    .uc {
+        width: 388px;
+        margin: 0 0 0 auto;
+        text-align: left;
+    }
+    .ilb_row {
+        padding: 0px 0 0px 45px;
+    }
+    .innovations_title {
+        margin-bottom: 15px;
+        margin-top: 46px;
+    }
+    .token_leftblock {
+        padding-left: 0;
+        margin-right: 0;
+        float: none;
+        width: 100%;
+    }
+    .tlb_title {
+        text-align: center;
+        font-size: 120px;
+    }
+    .token_rightblock {
+        margin-left: 0;
+        margin-right: 0;
+        float: none;
+        width: 100%;
+        padding-right: 0;
+    }
+    .anta_take, .above_will {
+        padding: 15px 25px;
+    }
+    .use_anta {
+        margin-bottom: -5px;
+    }
+    .grey_row, .green_line_row, .blue_row, .opacity_block {
+        width: 100%;
+        margin-top: 37px;
+    }
+    .grl_label, .gr_label, .br_label, .ob_label {
+        position: absolute;
+        top: -37px;
+        display: block;
+        width: calc(100% - 2px);
+        left: 0;
+        transform: none;
+    }
+    .grey_row:before, .opacity_block:before, .green_line_row:before, .blue_row:before {
+        display: none;
+    }
+    .received {
+        position: relative;
+        top: auto;
+        transform: none;
+        right: auto;
+        display: inline-block;
+        margin-top: 6px;
+    }
+    .grl_item {
+        width: auto;
+    }
+    .campaing_title {
+        margin-bottom: 0px;
+        margin-top: 72px;
+    }
+    .campaing_descrip {
+        margin-bottom: 46px;
+    }
+    .br_item {
+        padding: 10px 22px 10px 22px;
+    }
+    .column_first {
+        display: block;
+    }
+    .cf_item {
+        display: inline-block;
+        width: 33%;
+        float: left;
+        padding: 23px 10px;
+        margin-right: 0.334%;
+    }
+    .cf_greenW {
+        font-size: 39px;
+    }
+    p.cdd {
+        line-height: 1.5;
+    }
+    .media_logo_container {
+        display: block;
+    }
+    .media_block {
+        display: inline-block;
+        margin-top: 7px;
+    }
+    .media_title {
+        font-size: 30px;
+        color: #0d0d0d;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .media_desc {
+        font-size: 15px;
+        text-align: center;
+        color: #0d0d0d;
+        margin-bottom: 20px;
+    }
+    .partner {
+        width: 45%;
+        float: none;
+        margin-right: 0;
+    }
+    .qa_qustion {
+        width: 100%;
+    }
+    .questions_answ {
+        float: none;
+    }
+    .send_message_form {
+        float: none;
+        width: 100%;
+        margin-top: 25px;
+        margin-left: 0;
+    }
+    textarea {
+        height: 42px;
+    }
+    .qa_answer {
+        max-width: 100%;
+    }
+    .faq_title {
+        margin-top: -62px;
+    }
+    .lr_active .inn_contr:before {
+        display: none;
+    }
+    .as_photo {
+        max-height: none;
+    }
+    .as_name {
+        margin-top: 25px;
+        margin-bottom: 10px;
+    }
+    .ns_prev, .ns_next {
+        left: -38px;
+    }
+    .nav_slode .ns_next {
+        left: auto;
+        right: -37px;
+    }
+}
+@media screen and (max-width:767px){
+    header {
+        display: none;
+    }
+    .green_word {
+        font-size: 27px;
+    }
+    .main_standart {
+        font-size: 25px;
+    }
+    .home_ico.money {
+        padding: 5px 0px 5px 62px;
+    }
+    footer {
+        position: relative;
+    }
+    .home_copyright {
+        margin-left: 34px;
+    }
+    .home_right {
+        float: none;
+    }
+    input.fs_inputs {
+        width: 100%;
+    }
+    .platform:after {
+        font-size: 56px;
+    }
+    .title_platform {
+        font-size: 23px;
+        width: auto;
+    }
+    .title_ico:before, .title_platform:before {
+        line-height: 1.96;
+        width: 30px;
+        height: 30px;
+        font-size: 16px;
+        left: -35px;
+    }
+    .title_ico:hover::before, .title_platform:hover::before {
+        line-height: 1.94;
+    }
+    .title_ico {
+        font-size: 23px;
+        width: auto;
+    }
+    .ico:after {
+        font-size: 56px;
+    }
+    .problems_title {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .problems_description {
+        width: auto;
+        font-size: 15px;
+    }
+    .all_problems {
+        padding: 0;
+        margin-top: 40px;
+    }
+    .problema {
+        width: 100%;
+    }
+    .antavira_title {
+        margin-top: 20px;
+    }
+    .ktp_popup {
+        width: 250px;
+        left: -75px;
+    }
+    .antavira_title {
+        font-size: 40px;
+    }
+    .antavara_description {
+        font-size: 15px;
+        margin-bottom: 0;
+    }
+    .av_schema {
+        width: 100%;
+        margin-top: 20px;
+        height: 315px;
+    }
+    .av_item {
+        width: 100%;
+        position: relative;
+        transform: none;
+        left: auto;
+        top: auto;
+        right: auto;
+        bottom: auto;
+        text-align: right;
+        margin-bottom: 10px;
+        padding-right: 50px;
+    }
+    .av_item:before {
+        left: auto;
+        right: -17px;
+        top: -16px;
+        width: 70px;
+        height: 70px;
+    }
+    .popup_qustion {
+        right: -70px;
+        bottom: -125px;
+        background: rgba(255,255,255, 1);
+        z-index: 10;
+    }
+    .popup_answer {
+        right: -19px;
+        bottom: -125px;
+        background: rgba(255,255,255, 1);
+        z-index: 10;
+        left: auto;
+    }
+    .innovations_title {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .innovations_description {
+        width: 100%;
+        margin-top: 15px;
+    }
+    .ilb_row {
+        padding: 0;
+        width: 100%;
+    }
+    .inn_leftblock {
+        margin-right: 0;
+    }
+    .ico_inn {
+        display: none;
+    }
+    .inn_contr {
+        width: 100%;
+        font-size: 14px;
+    }
+    .inn_title {
+        font-size: 12px;
+    }
+    .inn_leftblock {
+        width: 100%;
+    }
+    .inn_right_block {
+        margin-top: 60px;
+    }
+    .inn_content.c_eco {
+        padding: 56px 5px 5px;
+        text-align: center;
+    }
+    .uc {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 20px;
+    }
+    .token_title {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .tlb_title {
+        font-size: 94px;
+    }
+    .use_anta {
+        margin-bottom: 5px;
+    }
+    .campaing_title {
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .cfi_desc {
+        color: #0d0d0d;
+    }
+    .cf_item {
+        width: 100%;
+        margin-bottom: 10px;
+        float: none;
+        margin-right: 0;
+    }
+    .column_first {
+        margin-right: 0;
+    }
+    .cs_logo {
+        width: 100%;
+        height: 49px;
+    }
+    .column_second {
+        width: 100%;
+    }
+    .company_desc {
+        color: #0d0d0d;
+        margin-bottom: 10px;
+    }
+    .nom_local {
+        color: #0d0d0d;
+    }
+    .partners_title {
+        font-size: 30px;
+    }
+    .partners_desc {
+        font-size: 15px;
+    }
+    .partner {
+        width: 100%;
+    }
+    form.send_message {
+        margin-bottom: 20px;
+    }
+    .powered:after {
+        right: 55px;
+        top: 0px;
+    }
+    .foot_soc .main_soc {
+        margin-right: 7px;
+    }
+    .foot_soc {
+        margin-top: 50px;
+    }
+    .tokens_container {
+        width: 100%;
+        overflow: scroll;
+    }
+    .grey_row, .green_line_row, .blue_row, .opacity_block {
+        width: 642px;
+    }
+    .home_left {
+        float: none;
+    }
+    .ns_img {
+        height: auto;
+        margin-right: 0;
+    }
+    .ns_prev, .ns_next {
+        background-size: 14px;
+        width: 15px;
+        height: 15px;
+        left: -14px;
+    }
+    .nav_slode .ns_next {
+        left: auto;
+        right: -3px;
+    }
+    .photo_block img {
+        width: 100%;
+    }
+    .advisors_dlider {
+        padding: 0;
+    }
+    .t_next, .pk_next {
+        width: 15px;
+        height: 15px;
+        background-size: 15px;
+    }
+    .t_prev.slick-arrow {
+        width: 15px;
+        height: 15px;
+        background-size: 15px;
+    }
+    .pk_prev {
+        width: 15px;
+        height: 15px;
+        background-size: 15px;
+        left: 0px;
+    }
+    .pk_next {
+        left: auto;
+        right: 0px;
+    }
+    body header {
+        display: none;
+    }
 }

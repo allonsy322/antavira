@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
@@ -36,6 +35,13 @@
                 <li data-menuanchor="elevenPage"><a href="#elevenPage">Partners</a></li>
                 <li data-menuanchor="twelvePage"><a href="#twelvePage">FAQ</a></li>
             </ul>
+            <div class="languages">
+                ENG
+                <ul class="selected_lang">
+                    <li class="l_active">ENG</li>
+                    <li>RUS</li>
+                </ul>
+            </div>
         </div>
     </header>
     <div id="fullpage">
@@ -54,7 +60,9 @@
                         <div class="home_ico medal">Automated quality control</div>
                         <div class="home_ico eco">Transparent ecosystem</div>
                     </div>
-                    <div class="home_copyright">Powered by</div>
+                    <div class="home_copyright">Powered by <a href="http://www.scorista.com/" target="_blank" rel="nofollow">
+                        <img src="./img/scorista.png"></a>
+                    </div>
                 </div>
                 <div class="home_right">
                     <div class="rm">
@@ -63,9 +71,9 @@
                     </div>
                     <div class="form_sub">
                         <div class="form_subscribe_title">Subscribe to our newsletter</div>
-                        <form action="" class="form_subscribe">
-                            <input type="text" placeholder="Your email" class="fs_inputs">
-                            <div class="join_submit">Join now</div>
+                        <form name="subscribe" action="" class="form_subscribe">
+                            <input required name="email" type="email" placeholder="Your email" class="fs_inputs">
+                            <input class="join_submit" type="submit" value="Join now">
                         </form>
                     </div>
                     <div class="main_docs">
@@ -73,26 +81,36 @@
                         <div class="md"><a href="#">White paper</a></div>
                     </div>
                     <div class="home_socials">
-                        <div class="main_soc m_facebook"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_telegram"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_twitter"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_reddit"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_github"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_btc"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_m"><a href="#" rel="nofollow" target="_blank"></a></div>
+                        <div class="main_soc m_facebook">
+                            <a href="https://www.facebook.com/TheAntavira/" rel="nofollow" target="_blank"></a>
+                        </div>
+                        <div class="main_soc m_telegram">
+                            <a href="https://t.me/antavira" rel="nofollow" target="_blank"></a>
+                        </div>
+                        <div class="main_soc m_twitter">
+                            <a href="https://twitter.com/theantavira" rel="nofollow" target="_blank"></a>
+                        </div>
+                        <!--<div class="main_soc m_reddit"><a href="#" rel="nofollow" target="_blank"></a></div>-->
+                        <!--<div class="main_soc m_github"><a href="#" rel="nofollow" target="_blank"></a></div>-->
+                        <!--<div class="main_soc m_btc"><a href="#" rel="nofollow" target="_blank"></a></div>-->
+                        <div class="main_soc m_m">
+                            <a href="https://medium.com/@theantavira" rel="nofollow" target="_blank"></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section platform_ico">
             <div class="platform">
+                <a href="#platform"></a>
                 <div class="title_platform">Platform</div>
             </div>
             <div class="ico">
+                <a href="#ico"></a>
                 <div class="title_ico">ICO</div>
             </div>
         </section>
-        <section class="section problems_section">
+        <section id="platform" class="section problems_section">
             <div class="container">
                 <div class="problems_title">The Problems</div>
                 <div class="problems_description">We know all the problems of credit risk managment players,
@@ -104,9 +122,9 @@
                             <div class="ktp">Know the pain</div>
                             <div class="ktp_popup">
                                 <ol>
-                                    <li>First problem</li>
-                                    <li>Second problem credit anlysts</li>
-                                    <li>The third problem analysts</li>
+                                    <li>High cost of credit risk management</li>
+                                    <li>Dependence from the risk managers</li>
+                                    <li>Hard to find qualified specialists</li>
                                 </ol>
                             </div>
                         </div>
@@ -117,9 +135,9 @@
                             <div class="ktp">Know the pain</div>
                             <div class="ktp_popup">
                                 <ol>
-                                    <li>First problem</li>
-                                    <li>Second problem credit anlysts</li>
-                                    <li>The third problem analysts</li>
+                                    <li>Lack of analytic report standards from lenders </li>
+                                    <li>Hard to protect intellectual property</li>
+                                    <li>Inability to work with multiple lenders</li>
                                 </ol>
                             </div>
                         </div>
@@ -130,9 +148,9 @@
                             <div class="ktp">Know the pain</div>
                             <div class="ktp_popup">
                                 <ol>
-                                    <li>First problem</li>
-                                    <li>Second problem credit anlysts</li>
-                                    <li>The third problem analysts</li>
+                                    <li>Hard to protect intellectual property</li>
+                                    <li>Difficult to access data for researches</li>
+                                    <li>Inability to work with multiple lenders</li>
                                 </ol>
                             </div>
                         </div>
@@ -143,9 +161,9 @@
                             <div class="ktp">Know the pain</div>
                             <div class="ktp_popup">
                                 <ol>
-                                    <li>First problem</li>
-                                    <li>Second problem credit anlysts</li>
-                                    <li>The third problem analysts</li>
+                                    <li>Time & resource consuming client acquisition</li>
+                                    <li>Difficult to integrate new clients</li>
+                                    <li>Misuse of data by clients</li>
                                 </ol>
                             </div>
                         </div>
@@ -166,9 +184,9 @@
                             <div class="popup_qustion">
                                 <div class="title_pq">What will they DO</div>
                                 <ul>
-                                    <li>Risk management imporvement</li>
-                                    <li>Insured profit system</li>
-                                    <li>Staff optimization</li>
+                                    <li>Receive services from risk managers and credit analysts from around the world </li>
+                                    <li>Generate credit data</li>
+                                    <li>Test new assessment technologies</li>
                                 </ul>
                             </div>
                         </div>
@@ -177,9 +195,9 @@
                             <div class="popup_answer">
                                 <div class="title_pa">What will they GET</div>
                                 <ul>
-                                    <li>Risk management imporvement</li>
-                                    <li>Insured profit system</li>
-                                    <li>Staff optimization</li>
+                                    <li>Loss underwriting: refund in case of loan default</li>
+                                    <li>Significant improvement of a credit assessment quality</li>
+                                    <li>Open market: loss reduction & staff optimization</li>
                                 </ul>
                             </div>
                         </div>
@@ -189,11 +207,11 @@
                         <div class="avi_question">
                             <div class="qustion_ico"></div>
                             <div class="popup_qustion">
-                                <div class="title_pq">What will they</div>
+                                <div class="title_pq">What will they DO</div>
                                 <ul>
-                                    <li>Risk management imporvement</li>
-                                    <li>Insured profit system</li>
-                                    <li>Staff optimization</li>
+                                    <li>Provide credit portfolio analysis for lenders</li>
+                                    <li>Control the quality of risk management services</li>
+                                    <li>Work with lenders from around the world</li>
                                 </ul>
                             </div>
                         </div>
@@ -202,23 +220,23 @@
                             <div class="popup_answer">
                                 <div class="title_pa">What will they GET</div>
                                 <ul>
-                                    <li>Risk management imporvement</li>
-                                    <li>Insured profit system</li>
-                                    <li>Staff optimization</li>
+                                    <li>Intellectual Property Protection</li>
+                                    <li>Unified analytical report standard</li>
+                                    <li>Open market: more clients & more money</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
                     <div class="av_item av_risk">
-                        <div class="avi_title">risk managmers</div>
+                        <div class="avi_title">Risk managmers</div>
                         <div class="avi_question">
                             <div class="qustion_ico"></div>
                             <div class="popup_qustion">
-                                <div class="title_pq">What will they</div>
+                                <div class="title_pq">What will they DO</div>
                                 <ul>
-                                    <li>Risk management imporvement</li>
-                                    <li>Insured profit system</li>
-                                    <li>Staff optimization</li>
+                                    <li>Provide credit assessment services for lenders</li>
+                                    <li>Develop new assessment technologies</li>
+                                    <li>Work with lenders from around the world</li>
                                 </ul>
                             </div>
                         </div>
@@ -227,9 +245,9 @@
                             <div class="popup_answer">
                                 <div class="title_pa">What will they GET</div>
                                 <ul>
-                                    <li>Risk management imporvement</li>
-                                    <li>Insured profit system</li>
-                                    <li>Staff optimization</li>
+                                    <li>Intellectual Property Protection</li>
+                                    <li>Access to the data for assessment researches</li>
+                                    <li>Open market: more clients & more money</li>
                                 </ul>
                             </div>
                         </div>
@@ -239,11 +257,11 @@
                         <div class="avi_question">
                             <div class="qustion_ico"></div>
                             <div class="popup_qustion">
-                                <div class="title_pq">What will they</div>
+                                <div class="title_pq">What will they DO</div>
                                 <ul>
-                                    <li>Risk management imporvement</li>
-                                    <li>Insured profit system</li>
-                                    <li>Staff optimization</li>
+                                    <li>Provide data for risk managers</li>
+                                    <li>Convenient toolkit for data sampling</li>
+                                    <li>Work with risk managers from around the world</li>
                                 </ul>
                             </div>
                         </div>
@@ -252,9 +270,9 @@
                             <div class="popup_answer">
                                 <div class="title_pa">What will they GET</div>
                                 <ul>
-                                    <li>Risk management imporvement</li>
-                                    <li>Insured profit system</li>
-                                    <li>Staff optimization</li>
+                                    <li>Fast & cheap client integration</li>
+                                    <li>Simple data monetization</li>
+                                    <li>Open market: more clients & more money</li>
                                 </ul>
                             </div>
                         </div>
@@ -269,19 +287,19 @@
                 <div class="inn_leftblock">
                     <div class="ilb_row lr_active">
                         <div class="ico_inn inn_cash"></div>
-                        <div class="inn_contr">
+                        <div class="inn_contr ic_cash">
                             <div class="inn_title">loss underwriting for lenders</div>
                         </div>
                     </div>
                     <div class="ilb_row">
                         <div class="ico_inn inn_medal"></div>
-                        <div class="inn_contr">
-                            <div class="inn_title">quality control</div>
+                        <div class="inn_contr ic_medal">
+                            <div class="inn_title">Automated quality control</div>
                         </div>
                     </div>
                     <div class="ilb_row">
                         <div class="ico_inn inn_eco"></div>
-                        <div class="inn_contr">
+                        <div class="inn_contr ic_eco">
                             <div class="inn_title">transparent ecosystem</div>
                         </div>
                     </div>
@@ -300,22 +318,25 @@
                         </div>
                         <div class="inn_content c_medal">
                             <p>
-                                ANTAVIRA2 starts the new era of lending with breakthrough Loss Underwriting feature for
-                                every lender in the world. With ANTAVIRA blockchain technology, lenders will be able to
-                                refund the full amount of the loan, in case of loan default.
+                                The heart of ANTAVIRA is the Smart Contract System. With the help of Smart Contracts,
+                                clients will be able to control the KPI, and service providers will have guaranteed
+                                payment after their work is done. If service providers will fail to meet the
+                                requirements, they will not get the money.
                             </p>
                             <p class="ital">
-                                It is time for every lender to get rid of the risks that can destroy the business.
+                                It is time for every market player to become responsible for the quality of the services
+                                they offer.
                             </p>
                         </div>
                         <div class="inn_content c_eco">
                             <p>
-                                ANTAVIRA3 starts the new era of lending with breakthrough Loss Underwriting feature for
-                                every lender in the world. With ANTAVIRA blockchain technology, lenders will be able to
-                                refund the full amount of the loan, in case of loan default.
+                                The main idea of ANTAVIRA is equal conditions for every participant of the platform.
+                                ANTAVIRA Blockchain Technology will make it real. Every participant of the platform will
+                                have access to every Smart Contract so everyone will be able to work with everyone
+                                in case of matched requirements.
                             </p>
                             <p class="ital">
-                                It is time for every lender to get rid of the risks that can destroy the business.
+                                It is time for every service provider to get a work with fair rules.
                             </p>
                         </div>
                     </div>
@@ -323,7 +344,7 @@
                 </div>
             </div>
         </section>
-        <section class="section token_section">
+        <section id="ico" class="section token_section">
             <div class="container">
                 <div class="token_title">The Token</div>
                 <div class="token_description">Truly disruptive technologies</div>
@@ -412,7 +433,7 @@
                             <div class="gr_name">ANTA</div>
                         </div>
                         <div class="gr_item">
-                            <div class="gr_number">№?</div>
+                            <div class="gr_number">№7</div>
                             <div class="gr_price">600 000</div>
                             <div class="gr_name">ANTA</div>
                         </div>
@@ -492,6 +513,11 @@
                         </ol>
                         <div class="ob_label">Bulk orders</div>
                     </div>
+                    <div class="received">
+                        <div class="cash">300 000</div>
+                        <div class="priv">Private investments</div>
+                        <div class="rece">Received</div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -534,52 +560,160 @@
                 </div>
                 <div class="column_third">
                     <div class="nom_item">
-                        <div class="nom_logo"><img src="./img/experience/innotribe.png" alt=""></div>
+                        <div class="nom_logo">
+                            <a href="https://www.swift.com/news-events/press-releases/oz-forensics_scorista-and-talkbank-win-innotribe_s-2017-startup-challenge-for-russia"
+                               target="_blank"
+                               rel="nofollow"
+                            >
+                                <img src="./img/experience/innotribe.png" alt="">
+                            </a>
+                        </div>
                         <div class="nom_des">
-                            <div class="nom_title">Best startup</div>
-                            <div class="nom_local">Innotribe, Russia</div>
+                            <div class="nom_title">
+                                <a href="https://www.swift.com/news-events/press-releases/oz-forensics_scorista-and-talkbank-win-innotribe_s-2017-startup-challenge-for-russia"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Best startup</a>
+                            </div>
+                            <div class="nom_local">
+                                <a href="https://www.swift.com/news-events/press-releases/oz-forensics_scorista-and-talkbank-win-innotribe_s-2017-startup-challenge-for-russia"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Innotribe, Russia</a>
+                            </div>
                         </div>
                     </div>
                     <div class="nom_item">
-                        <div class="nom_logo"><img src="./img/experience/innoVex.png" alt=""></div>
+                        <div class="nom_logo">
+                            <a href="http://innovex.computex.biz/2018/show/downloads/InnoVEX_2017_PostShowReport.pdf"
+                               target="_blank"
+                               rel="nofollow"
+                            >
+                                <img src="./img/experience/innoVex.png" alt="">
+                            </a>
+                        </div>
                         <div class="nom_des">
-                            <div class="nom_title">Apec prize</div>
-                            <div class="nom_local">InnoWex, Laiwann</div>
+                            <div class="nom_title">
+                                <a href="http://innovex.computex.biz/2018/show/downloads/InnoVEX_2017_PostShowReport.pdf"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Apec prize</a>
+                            </div>
+                            <div class="nom_local">
+                                <a href="http://innovex.computex.biz/2018/show/downloads/InnoVEX_2017_PostShowReport.pdf"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >InnoWex, Laiwann</a>
+                            </div>
                         </div>
                     </div>
                     <div class="nom_item">
-                        <div class="nom_logo"><img src="./img/experience/goldenruble.png" alt=""></div>
+                        <div class="nom_logo">
+                            <a href="http://conf.rusmicrofinance.ru/podvedeny-itogi-i-nagrazhdeny-pobediteli-pyatoj-professionalnoj-premii/" target="_blank" rel="nofollow">
+                                <img src="./img/experience/goldenruble.png" alt="">
+                            </a>
+                        </div>
                         <div class="nom_des">
-                            <div class="nom_title">Best technology</div>
-                            <div class="nom_local">Golden Ruble, Russia</div>
+                            <div class="nom_title">
+                                <a href="http://conf.rusmicrofinance.ru/podvedeny-itogi-i-nagrazhdeny-pobediteli-pyatoj-professionalnoj-premii/"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Best technology</a>
+                            </div>
+                            <div class="nom_local">
+                                <a href="http://conf.rusmicrofinance.ru/podvedeny-itogi-i-nagrazhdeny-pobediteli-pyatoj-professionalnoj-premii/"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Golden Ruble, Russia</a>
+                            </div>
                         </div>
                     </div>
                     <div class="nom_item">
-                        <div class="nom_logo"><img src="./img/experience/bankreview.png" alt=""></div>
+                        <div class="nom_logo">
+                            <a href="https://bosfera.ru/bo/finansovaya-sfera-kak-vse-nachinalos" target="_blank" rel="nofollow">
+                                <img src="./img/experience/bankreview.png" alt="">
+                            </a>
+                        </div>
                         <div class="nom_des">
-                            <div class="nom_title">Best scoring</div>
-                            <div class="nom_local">Bank Review, Russia</div>
+                            <div class="nom_title">
+                                <a href="https://bosfera.ru/bo/finansovaya-sfera-kak-vse-nachinalos"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Best scoring</a>
+                            </div>
+                            <div class="nom_local">
+                                <a href="https://bosfera.ru/bo/finansovaya-sfera-kak-vse-nachinalos"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Bank Review, Russia</a>
+                            </div>
                         </div>
                     </div>
                     <div class="nom_item">
-                        <div class="nom_logo"><img src="./img/experience/hse.png" alt=""></div>
+                        <div class="nom_logo">
+                            <a href="https://incrussia.ru/news/vshe-nazvala-luchshie-startapy-2016-goda/"
+                               target="_blank"
+                               rel="nofollow"
+                            >
+                                <img src="./img/experience/hse.png" alt=""></a>
+                        </div>
                         <div class="nom_des">
-                            <div class="nom_title">Startup of the year</div>
-                            <div class="nom_local">HSE, Russia</div>
+                            <div class="nom_title">
+                                <a href="https://incrussia.ru/news/vshe-nazvala-luchshie-startapy-2016-goda/"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Startup of the year</a>
+                            </div>
+                            <div class="nom_local">
+                                <a href="https://incrussia.ru/news/vshe-nazvala-luchshie-startapy-2016-goda/"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >HSE, Russia</a>
+                            </div>
                         </div>
                     </div>
                     <div class="nom_item">
-                        <div class="nom_logo"><img src="./img/experience/sibos.png" alt=""></div>
+                        <div class="nom_logo">
+                            <a href="https://www.sibos.com/conference/conference-programme/innovating-russia"
+                               target="_blank"
+                               rel="nofollow"
+                            >
+                                <img src="./img/experience/sibos.png" alt=""></a>
+                        </div>
                         <div class="nom_des">
-                            <div class="nom_title">Official speaker</div>
-                            <div class="nom_local">Sibos, Canada</div>
+                            <div class="nom_title">
+                                <a href="https://www.sibos.com/conference/conference-programme/innovating-russia"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Official speaker</a>
+                            </div>
+                            <div class="nom_local">
+                                <a href="https://www.sibos.com/conference/conference-programme/innovating-russia"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Sibos, Canada</a>
+                            </div>
                         </div>
                     </div>
                     <div class="nom_item">
-                        <div class="nom_logo"><img src="./img/experience/top_pres.png" alt=""></div>
+                        <div class="nom_logo">
+                            <a href="" target="_blank" rel="nofollow">
+                                <img src="./img/experience/top_pres.png" alt="">
+                            </a>
+                        </div>
                         <div class="nom_des">
-                            <div class="nom_title">Top entrepreneurs</div>
-                            <div class="nom_local">Tech Tour, Russia</div>
+                            <div class="nom_title">
+                                <a href="https://www.techtour.com/news/2017/tech-tour-names-russia%E2%80%99s-25-most-promising-tech-companies.html"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Top entrepreneurs</a>
+                            </div>
+                            <div class="nom_local">
+                                <a href="https://www.techtour.com/news/2017/tech-tour-names-russia%E2%80%99s-25-most-promising-tech-companies.html"
+                                   target="_blank"
+                                   rel="nofollow"
+                                >Tech Tour, Russia</a>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -604,6 +738,7 @@
                                 Thank you, Toronto! Sibos-2017 was a great experience with highest concentration of
                                 finance professionals. See you next year!
                             </div>
+                            <a href="https://www.sibos.com/conference/conference-programme/innovating-russia" target="_blank" rel="nofollow"></a>
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
@@ -614,6 +749,7 @@
                                 Smart Engines became our official partner in image recognition! Innovations attracted
                                 to each other.
                             </div>
+                            <a href="http://smartengines.ru/news50/" target="_blank" rel="nofollow"></a>
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
@@ -624,6 +760,9 @@
                                 We received «Best Scoring Technology» Award at Golden Ruble – 2017!
                                 Another reason to work hard
                             </div>
+                            <a href="http://conf.rusmicrofinance.ru/podvedeny-itogi-i-nagrazhdeny-pobediteli-pyatoj-professionalnoj-premii/"
+                               target="_blank"
+                               rel="nofollow"></a>
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
@@ -634,6 +773,7 @@
                                 Great news! We are going to New York to participate in Starta Accelerator program!
                                 The time for the new market has come.
                             </div>
+                            <a href="http://startaaccelerator.com/" target="_blank" rel="nofollow"></a>
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
@@ -644,6 +784,7 @@
                                 Smart Engines became our official partner in image recognition! Innovations attracted
                                 to each other.
                             </div>
+                            <a href="http://smartengines.ru/news50/" target="_blank" rel="nofollow"></a>
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
@@ -654,6 +795,7 @@
                                 Great news! We are going to New York to participate in Starta Accelerator program!
                                 The time for the new market has come.
                             </div>
+                            <a href="http://startaaccelerator.com/" target="_blank" rel="nofollow"></a>
                         </div>
                     </div>
                 </div>
@@ -661,136 +803,136 @@
                 <div class="media_desc">You might have heard about us</div>
                 <div class="media_logo_container">
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.cnews.ru/news/line/2017-11-28_scorista_zapustila_mobilnyj_skoring_s_tehnologiej" target="_blank" rel="nofollow">
                             <img src="./img/media/logocnews.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="https://www.vedomosti.ru/newspaper/articles/2015/04/23/tsifri-sobitiya" target="_blank" rel="nofollow">
                             <img src="./img/media/vedomosti.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="https://www.swift.com/news-events/press-releases/oz-forensics_scorista-and-talkbank-win-innotribe_s-2017-startup-challenge-for-russia" target="_blank" rel="nofollow">
                             <img src="./img/media/swift.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="https://www.kommersant.ru/doc/2582691" target="_blank" rel="nofollow">
                             <img src="./img/media/kommersant.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://bankir.ru/publikacii/20160309/skorista-my-garantiruem-dvukratnyi-rost-vyruchki-mfo-10007283/" target="_blank" rel="nofollow">
                             <img src="./img/media/bankir_ru.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="https://www.finextra.com/pressarticle/70073/oz-forensics-scorista-and-talkbank-win-innotribes-2017-startup-challenge-for-russia/sibos" target="_blank" rel="nofollow">
                             <img src="./img/media/finextra.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="media_logo_container">
                     <div class="media_block">
-                        <a href="">
+                        <a href="https://rb.ru/news/starta-four/" target="_blank" rel="nofollow">
                             <img src="./img/media/rusbase.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.banki.ru/news/lenta/?id=9849964 " target="_blank" rel="nofollow">
                             <img src="./img/media/bankiru.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.cdrb.com.cn/epaper/cdrbpad/201712/11/c6913.html" target="_blank" rel="nofollow">
                             <img src="./img/media/kitay_2.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://futurebanking.ru/post/3076 " target="_blank" rel="nofollow">
                             <img src="./img/media/future-bank.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="https://roem.ru/20-04-2015/192882/scorista-who-pays/" target="_blank" rel="nofollow">
                             <img src="./img/media/roem.png" alt="">
                         </a>
                     </div>
-                    <div class="media_block">
-                        <a href="">
+                    <div class="https://www.moedelo.org/journal/scorista/">
+                        <a href="" target="_blank" rel="nofollow">
                             <img src="./img/media/moedelo-1.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://finparty.ru/ratings/19682/" target="_blank" rel="nofollow">
                             <img src="./img/media/finparty.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.chinaru.info/zhongejmyw/jingmaoyaowen/47011.shtml" target="_blank" rel="nofollow">
                             <img src="./img/media/chinaru.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://firrma.ru/data/news/5149/" target="_blank" rel="nofollow">
                             <img src="./img/media/firma.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="https://vc.ru/4818-scorista" target="_blank" rel="nofollow">
                             <img src="./img/media/Vc.ru.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="https://vc.ru/4818-scorista" target="_blank" rel="nofollow">
                             <img src="./img/media/lenta.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://sk.ru/news/b/news/archive/2016/05/31/skorista-predstavila-servis-dlya-vladelcev-bolshih-dannyh.aspx" target="_blank" rel="nofollow">
                             <img src="./img/media/skolkovo.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.sohu.com/a/165597924_118792" target="_blank" rel="nofollow">
                             <img src="./img/media/kitay_1.png" alt="">
                         </a>
                     </div>
                 </div>
                 <div class="media_logo_container">
                     <div class="media_block">
-                        <a href="">
-                            <img src="./img/media/WB_logo.png.png" alt="">
+                        <a href="https://www.weibo.com/5282792576/ExKBwbjcX?type=comment" target="_blank" rel="nofollow">
+                            <img src="./img/media/WB_logo.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.it-weekly.ru/it-news/it/99470.html" target="_blank" rel="nofollow">
                             <img src="./img/media/it_weekly.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.chnfintech.com/cv-689975.html" target="_blank" rel="nofollow">
                             <img src="./img/media/322.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.tianfusoftwarepark.com/templates/zh/newsDetail/24945.aspx" target="_blank" rel="nofollow">
                             <img src="./img/media/clogo.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://sputniknews.cn/russia_china_relations/201702281021972052/" target="_blank" rel="nofollow">
                             <img src="./img/media/Sputnik_logo.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.cdht.gov.cn/xwzxgxyw/82346.jhtml" target="_blank" rel="nofollow">
                             <img src="./img/media/228.png" alt="">
                         </a>
                     </div>
                     <div class="media_block">
-                        <a href="">
+                        <a href="http://www.360doc.com/content/17/0325/18/32626470_640078221.shtml" target="_blank" rel="nofollow">
                             <img src="./img/media/1488.png" alt="">
                         </a>
                     </div>
@@ -998,7 +1140,7 @@
                                 <img src="./img/team/investor.jpg" alt="">
                             </div>
                             <div class="as_name">Alexey lykov</div>
-                            <div class="as_post">Co-founder, <span>CTO Playkey</span></div>
+                            <div class="as_post">Co-founder, <span><a href="https://playkey.io" target="_blank" rel="nofollow">CTO Playkey</a></span></div>
                         </div>
                         <div class="advisor_slide">
                             <div class="as_photo">
@@ -1038,37 +1180,49 @@
                 <div class="partners_desc">You might have heard about us</div>
                 <div class="partners_container">
                     <div class="partner">
-                        <img src="./img/parthners/smart.jpg" alt="">
-                        <div class="partner_desc">Cloud computing service for building, testing, deploying, and managing
-                            applications and services through a global network of data centers.
-                        </div>
+                        <a href="https://azure.microsoft.com" target="_blank" rel="nofollow">
+                            <img src="./img/parthners/smart.jpg" alt="">
+                            <div class="partner_desc">Cloud computing service for building, testing, deploying, and
+                                managing applications and services through a global network of data centers.
+                            </div>
+                        </a>
                     </div>
                     <div class="partner">
-                        <img src="./img/parthners/inspeer.jpg" alt="">
-                        <div class="partner_desc">A peer-to-peer lending service that works with cryptocurrency and fiat
-                        </div>
+                        <a href="https://inspeer.io/" target="_blank" rel="nofollow">
+                            <img src="./img/parthners/inspeer.jpg" alt="">
+                            <div class="partner_desc">A peer-to-peer lending service that works with cryptocurrency and fiat
+                            </div>
+                        </a>
                     </div>
                     <div class="partner">
-                        <img src="./img/parthners/Equifax.jpg" alt="">
-                        <div class="partner_desc">Consumer credit reporting agency that collects and aggregates information
-                            on over 800 million individual consumers and more than 88 million businesses worldwide
-                        </div>
+                        <a href="https://www.equifax.com" target="_blank" rel="nofollow">
+                            <img src="./img/parthners/Equifax.jpg" alt="">
+                            <div class="partner_desc">Consumer credit reporting agency that collects and aggregates information
+                                on over 800 million individual consumers and more than 88 million businesses worldwide
+                            </div>
+                        </a>
                     </div>
                     <div class="partner">
-                        <img src="./img/parthners/scorista.jpg" alt="">
-                        <div class="partner_desc">First risk management team on ANTAVIRA platform
-                        </div>
+                        <a href="http://www.scorista.com/" target="_blank" rel="nofollow">
+                            <img src="./img/parthners/scorista.jpg" alt="">
+                            <div class="partner_desc">First risk management team on ANTAVIRA platform
+                            </div>
+                        </a>
                     </div>
                     <div class="partner">
-                        <img src="./img/parthners/skolkovo.jpg" alt="">
-                        <div class="partner_desc">Innovation center that aims to nurture development in IT, biomedical, energy, nuclear, and space sectors. Russian “Silicon Valley”.
-                        </div>
+                        <a href="http://sk.ru/" target="_blank" rel="nofollow">
+                            <img src="./img/parthners/skolkovo.jpg" alt="">
+                            <div class="partner_desc">Innovation center that aims to nurture development in IT, biomedical, energy, nuclear, and space sectors. Russian “Silicon Valley”.
+                            </div>
+                        </a>
                     </div>
                     <div class="partner">
-                        <img src="./img/parthners/smart.jpg" alt="">
-                        <div class="partner_desc">Company aimed at developing systems for image processing and character
-                            recognition in a video stream.
-                        </div>
+                        <a href="http://smartengines.biz/" target="_blank" rel="nofollow">
+                            <img src="./img/parthners/smart.jpg" alt="">
+                            <div class="partner_desc">Company aimed at developing systems for image processing and character
+                                recognition in a video stream.
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -1115,28 +1269,38 @@
                 </div>
                 <div class="send_message_form">
                     <div class="smf_title">Send us your message</div>
-                    <form action="" class="send_message">
-                        <input type="text" name="name" class="smf_input" placeholder="Name">
-                        <input type="text" name="email" class="smf_input" placeholder="E-mail">
-                        <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-                        <div class="smf_send_btn">Send</div>
+                    <form name="message" action="" class="send_message">
+                        <input required type="text" name="name" class="smf_input" placeholder="Name">
+                        <input required type="email" name="email" class="smf_input" placeholder="E-mail">
+                        <textarea required name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                        <input class="smf_send_btn" type="submit" value="Send">
                     </form>
                 </div>
             </div>
             <footer>
                 <div class="container">
                     <div class="foot_copyright">
-                        <div class="powered">Powered by</div>
+                        <div class="powered">Powered by <a href="http://www.scorista.com/" target="_blank" rel="nofollow">
+                            <img src="./img/scorista.png"></a>
+                        </div>
                         <div class="reserved">2017© All rights reserved</div>
                     </div>
                     <div class="foot_soc">
-                        <div class="main_soc m_facebook"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_telegram"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_twitter"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_reddit"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_github"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_btc"><a href="#" rel="nofollow" target="_blank"></a></div>
-                        <div class="main_soc m_m"><a href="#" rel="nofollow" target="_blank"></a></div>
+                        <div class="main_soc m_facebook">
+                            <a href="https://www.facebook.com/TheAntavira/" rel="nofollow" target="_blank"></a>
+                        </div>
+                        <div class="main_soc m_telegram">
+                            <a href="https://t.me/antavira" rel="nofollow" target="_blank"></a>
+                        </div>
+                        <div class="main_soc m_twitter">
+                            <a href="https://twitter.com/theantavira" rel="nofollow" target="_blank"></a>
+                        </div>
+                        <!--<div class="main_soc m_reddit"><a href="#" rel="nofollow" target="_blank"></a></div>-->
+                        <!--<div class="main_soc m_github"><a href="#" rel="nofollow" target="_blank"></a></div>-->
+                        <!--<div class="main_soc m_btc"><a href="#" rel="nofollow" target="_blank"></a></div>-->
+                        <div class="main_soc m_m">
+                            <a href="https://medium.com/@theantavira" rel="nofollow" target="_blank"></a>
+                        </div>
                     </div>
                 </div>
             </footer>
@@ -1144,31 +1308,118 @@
     </div>
     <script>
         $(document).ready(function() {
-            $('#fullpage').fullpage({
-                anchors: ['onePage', 'twoPage', 'threePage', 'fourPage', 'fivePage','sixPage','sevenPage','eightPage', 'ninePage', 'tenPage', 'elevenPage', 'twelvePage'],
-                menu: '#menu',
-                css3:true
-            });
+            if(window.screen.width >= 768) {
+                $('#fullpage').fullpage({
+                    anchors: ['onePage', 'twoPage', 'threePage', 'fourPage', 'fivePage','sixPage','sevenPage','eightPage', 'ninePage', 'tenPage', 'elevenPage', 'twelvePage'],
+                    menu: '#menu',
+                    css3:true
+                });
+            }
             $('.news_slider').slick({
                 infinite: true,
                 slidesToShow: 4,
                 slidesToScroll: 1,
                 prevArrow: '.ns_prev',
-                nextArrow: '.ns_next'
+                nextArrow: '.ns_next',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    }
+                ]
             });
             $('.team_slider').slick({
                 infinite: true,
                 slidesToShow: 5,
                 slidesToScroll: 1,
                 prevArrow: '.t_prev',
-                nextArrow: '.t_next'
+                nextArrow: '.t_next',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    }
+                ]
             });
             $('.advisors_dlider').slick({
                 infinite: true,
                 slidesToShow: 3,
                 slidesToScroll: 1,
                 prevArrow: '.pk_prev',
-                nextArrow: '.pk_next'
+                nextArrow: '.pk_next',
+                responsive: [
+                    {
+                        breakpoint: 992,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    },
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            infinite: true
+                        }
+                    }
+                ]
+            });
+
+// clicker for innovations page
+            function clicker (thisClick, hide, show) {
+                $('.inn_leftblock').find('.lr_active').removeClass('lr_active');
+                thisClick.parent('.ilb_row').addClass('lr_active');
+                hide.hide();
+                show.show();
+            }
+
+            $('.ic_cash, .inn_cash').click(function(){
+                clicker($(this), $('.c_eco, .c_medal'), $('.c_cash'));
+            });
+            $('.ic_medal, .inn_medal').click(function(){
+                clicker($(this), $('.c_eco, .c_cash'), $('.c_medal'));
+            });
+            $('.ic_eco, .inn_eco').click(function(){
+                clicker($(this), $('.c_medal, .c_cash'), $('.c_eco'));
+            });
+
+// clicker FAQ
+            $('.qa_qustion').click(function(){
+                if($(this).hasClass('slideDown')){
+                    $(this).removeClass('slideDown');
+                    $(this).parent().find('.qa_answer').slideToggle();
+                }else{
+                    $(this).parent().find('.qa_answer').slideToggle();
+                    $('.slideDown').parent().find('.qa_answer').slideUp();
+                    $('.slideDown').removeClass('slideDown');
+                    $(this).addClass('slideDown');
+                }
             });
         });
     </script>

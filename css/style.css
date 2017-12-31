@@ -97,7 +97,6 @@ ul.menu li a:hover::after, ul.menu li.active a::after {
 }
 .fp-viewing-onePage ul.menu li a,
 .fp-viewing-twoPage ul.menu li a,
-.fp-viewing-fivePage ul.menu li a,
 .fp-viewing-threePage ul.menu li a,
 .fp-viewing-fourPage ul.menu li a {
     color: #fff;
@@ -160,7 +159,6 @@ ul.menu:before {
 }
 .fp-viewing-onePage ul.menu:before,
 .fp-viewing-twoPage ul.menu:before,
-.fp-viewing-fivePage ul.menu:before,
 .fp-viewing-threePage ul.menu:before,
 .fp-viewing-fourPage ul.menu:before {
     background-image: url(../img/logo_white.png);
@@ -202,6 +200,8 @@ ul.menu:before {
 div.cursor {
     font-size: 18px;
     margin-bottom: 40px;
+    height: 21px;
+    display: inline-block;
 }
 html body {
     color: #e4e4e4;
@@ -249,6 +249,8 @@ html body {
     text-align: justify;
     text-transform: uppercase;
     letter-spacing: 5px;
+    height: 38px;
+    background: url(../img/risk.png) no-repeat;
 }
 .form_subscribe_title {
     font-size: 16px;
@@ -380,6 +382,7 @@ input.fs_inputs {
 .platform:after {
     content: 'Platform';
     font-size: 239px;
+    padding-top: 20px;
 }
 .ico:after {
     content: 'ico';
@@ -391,7 +394,7 @@ input.fs_inputs {
     font-weight: 600;
     text-transform: uppercase;
     width: 287px;
-    top: 50%;
+    top: calc(50% + 20px);
     left: 50%;
     transform: translate(-50%, -50%);
     z-index: 9;
@@ -417,6 +420,8 @@ input.fs_inputs {
 }
 .title_platform:before {
     color:#141414;
+.title_ico: before, .title_platform:before
+top: calc(50% + 20px);
 }
 .title_ico:hover::before, .title_platform:hover::before {
     background: #141414;
@@ -685,7 +690,6 @@ section.innovations_section {
     background: rgba(0,138,85, 0.7);
     padding: 90px 25px 30px;
     position: relative;
-    height: 390px;
 }
 .inn_content:before {
     content: '';
@@ -875,7 +879,7 @@ section.campaing_section {
     border: 1px solid;
 }
 
-.grey_row {display: table;background: #898989;margin: 0 auto;margin-bottom: 7px;position: relative;}
+.grey_row {display: table;background: #898989;margin: 0 auto;margin-bottom: 7px;position: relative;width: 742px;}
 
 .tokens_container {
     text-align: center;
@@ -890,6 +894,7 @@ section.campaing_section {
     background-size: cover;
     margin-bottom: 7px;
     position: relative;
+    width: 742px;
 }
 .blue_row {
     display: table;
@@ -900,6 +905,10 @@ section.campaing_section {
     background-size: cover;
     position: relative;
     margin-bottom: 12px;
+    width: 742px;
+}
+.problems_section {
+    z-index: 10;
 }
 .gr_number {
     font-size: 18px;
@@ -959,7 +968,7 @@ section.campaing_section {
 }
 .opacity_block {
     position: relative;
-    width: 770px;
+    width: 740px;
     margin: 0 auto;
     color: #0d0d0d;
     text-align: left;
@@ -1738,9 +1747,29 @@ ul.selected_lang li.l_active:hover {
     width: 280px;
     height: 60px;
     z-index: 10;
-    top: 50%;
+    top: calc(50% + 20px);
     left: 50%;
     transform: translate(-50%, -50%);
+}
+.home_left span.typed-cursor {
+    font-size: 20px;
+}
+.rm {
+    width: 100%;
+    max-width: 303px;
+    margin: 100px auto;
+}
+.main_standart {
+    margin-top: 20px;
+}
+.youtube {
+    width: 101px;
+    height: 88px;
+    top: 132px;
+    right: -418px;
+    z-index: 10;
+    position: absolute;
+    background: url(../img/youtube.png) no-repeat;
 }
 @media screen and (max-height:800px){
     .white_word {
@@ -1855,7 +1884,6 @@ ul.selected_lang li.l_active:hover {
     }
     .grl_item {
         padding: 10px 5px 5px 5px;
-        width: 104px;
     }
     .grl_anta {
         margin-bottom: 9px;
@@ -1969,6 +1997,20 @@ ul.selected_lang li.l_active:hover {
     }
 }
 @media screen and (max-width:1199px){
+    .youtube {
+        width: 59px;
+        height: 45px;
+        top: 150px;
+        right: -243px;
+        z-index: 10;
+        position: absolute;
+        background-image: url(../img/youtube.png);
+        background-repeat: no-repeat;
+        background-size: 63px;
+    }
+    .green_line_row {
+        width: 602px;
+    }
     ul.menu:before {
         background-size: 100%;
         width: 80px;
@@ -2166,6 +2208,9 @@ ul.selected_lang li.l_active:hover {
     }
 }
 @media screen and (max-width:991px){
+    .youtube {
+        display: none;
+    }
     .home_left:after {
         display: none;
     }
@@ -2267,7 +2312,7 @@ ul.selected_lang li.l_active:hover {
         top: -37px;
         display: block;
         width: calc(100% - 2px);
-        left: 0;
+        left: 1px;
         transform: none;
     }
     .grey_row:before, .opacity_block:before, .green_line_row:before, .blue_row:before {
@@ -2383,9 +2428,7 @@ ul.selected_lang li.l_active:hover {
     .main_standart {
         font-size: 25px;
     }
-    .home_ico.money {
-        padding: 5px 0px 5px 62px;
-    }
+
     footer {
         position: relative;
     }
@@ -2400,6 +2443,7 @@ ul.selected_lang li.l_active:hover {
     }
     .platform:after {
         font-size: 56px;
+        padding-top: 0;
     }
     .title_platform {
         font-size: 23px;
@@ -2482,11 +2526,13 @@ ul.selected_lang li.l_active:hover {
         z-index: 10;
     }
     .popup_answer {
-        right: -19px;
-        bottom: -125px;
+        right: -65px;
+        bottom: -165px;
         background: rgba(255,255,255, 1);
         z-index: 10;
         left: auto;
+        width: 320px;
+        top: 43px;
     }
     .innovations_title {
         font-size: 30px;
@@ -2527,6 +2573,7 @@ ul.selected_lang li.l_active:hover {
         width: 100%;
         text-align: left;
         margin-bottom: 20px;
+        height: 96px;
     }
     .token_title {
         margin-top: 20px;
@@ -2596,6 +2643,7 @@ ul.selected_lang li.l_active:hover {
     }
     .grey_row, .green_line_row, .blue_row, .opacity_block {
         width: 642px;
+        display: table;
     }
     .home_left {
         float: none;
@@ -2642,5 +2690,32 @@ ul.selected_lang li.l_active:hover {
     }
     body header {
         display: none;
+    }
+    .trill {
+        font-size: 22px;
+    }
+    .home_socials {
+        text-align: center;
+        padding-bottom: 20px;
+    }
+    .platform a, .ico a {
+        top: 50%;
+    }
+    .title_platform, .title_ico {
+        top: 50%;
+    }
+    .column_first .cf_item:last-child {
+        margin-bottom: 20px;
+    }
+    .home_ico {
+        padding: 20px 0px 20px 52px;
+        font-size: 16px;
+    }
+    .news_slide {
+        margin-right: 0;
+    }
+    .md {
+        padding: 18px 0 18px 40px;
+        background-position: -6px;
     }
 }

@@ -8,6 +8,7 @@
     <link rel="stylesheet" type="text/css" href="./css/jquery.fullPage.css" />
     <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" type="text/css" href="./css/slick.css" />
+    <link rel="stylesheet" type="text/css" href="./css/YouTubePopUp.css" />
     <script src="http://code.jquery.com/jquery-3.2.1.min.js"
             integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
             crossorigin="anonymous"></script>
@@ -17,6 +18,7 @@
     <script type="text/javascript" src="./js/typed.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
+    <script type="text/javascript" src="./js/YouTubePopUp.jquery.js"></script>
     <title>Blockchain, Risk Managment, Platform</title>
 </head>
 <body>
@@ -65,7 +67,7 @@
                     <div class="home_copyright">Powered by <a href="http://www.scorista.com/" target="_blank" rel="nofollow">
                         <img src="./img/scorista.png"></a>
                     </div>
-                    <div class="youtube"></div>
+                    <a href="https://www.youtube.com/watch?v=-Y2lhO5xI58" class="youtube"></a>
                 </div>
                 <div class="home_right">
                     <div class="rm">
@@ -400,7 +402,7 @@
         </section>
         <section class="section campaing_section">
             <div class="container">
-                <div class="campaing_title">The Campaing</div>
+                <div class="campaing_title">The Campaign</div>
                 <div class="campaing_descrip">Transparent and fair</div>
                 <div class="tokens_container">
                     <div class="grey_row">
@@ -733,25 +735,14 @@
                     <div class="news_slider">
                         <div class="news_slide">
                             <div class="ns_img">
-                                <img src="./img/news/26oc.png" alt="">
+                                <img src="./img/news/29dec.png" alt="">
                             </div>
-                            <div class="ns_data">26.10.2017</div>
+                            <div class="ns_data">29.12.2017</div>
                             <div class="ns_info">
-                                Thank you, Toronto! Sibos-2017 was a great experience with highest concentration of
-                                finance professionals. See you next year!
+                                Great news! We are going to New York to participate in Starta Accelerator program!
+                                The time for the new market has come.
                             </div>
-                            <a href="https://www.sibos.com/conference/conference-programme/innovating-russia" target="_blank" rel="nofollow"></a>
-                        </div>
-                        <div class="news_slide">
-                            <div class="ns_img">
-                                <img src="./img/news/28no.png" alt="">
-                            </div>
-                            <div class="ns_data">28.11.2017</div>
-                            <div class="ns_info">
-                                Smart Engines became our official partner in image recognition! Innovations attracted
-                                to each other.
-                            </div>
-                            <a href="http://smartengines.ru/news50/" target="_blank" rel="nofollow"></a>
+                            <a href="http://startaaccelerator.com/" target="_blank" rel="nofollow"></a>
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
@@ -768,17 +759,6 @@
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
-                                <img src="./img/news/29dec.png" alt="">
-                            </div>
-                            <div class="ns_data">29.12.2017</div>
-                            <div class="ns_info">
-                                Great news! We are going to New York to participate in Starta Accelerator program!
-                                The time for the new market has come.
-                            </div>
-                            <a href="http://startaaccelerator.com/" target="_blank" rel="nofollow"></a>
-                        </div>
-                        <div class="news_slide">
-                            <div class="ns_img">
                                 <img src="./img/news/28no.png" alt="">
                             </div>
                             <div class="ns_data">28.11.2017</div>
@@ -790,14 +770,14 @@
                         </div>
                         <div class="news_slide">
                             <div class="ns_img">
-                                <img src="./img/news/29dec.png" alt="">
+                                <img src="./img/news/26oc.png" alt="">
                             </div>
-                            <div class="ns_data">29.12.2017</div>
+                            <div class="ns_data">26.10.2017</div>
                             <div class="ns_info">
-                                Great news! We are going to New York to participate in Starta Accelerator program!
-                                The time for the new market has come.
+                                Thank you, Toronto! Sibos-2017 was a great experience with highest concentration of
+                                finance professionals. See you next year!
                             </div>
-                            <a href="http://startaaccelerator.com/" target="_blank" rel="nofollow"></a>
+                            <a href="https://www.sibos.com/conference/conference-programme/innovating-russia" target="_blank" rel="nofollow"></a>
                         </div>
                     </div>
                 </div>
@@ -1132,17 +1112,17 @@
                     <div class="advisors_dlider">
                         <div class="advisor_slide">
                             <div class="as_photo">
-                                <img src="./img/team/TBA.jpg" alt="">
-                            </div>
-                            <div class="as_name"></div>
-                            <div class="as_post"><span></span></div>
-                        </div>
-                        <div class="advisor_slide">
-                            <div class="as_photo">
                                 <img src="./img/team/investor.jpg" alt="">
                             </div>
                             <div class="as_name">Alexey lykov</div>
                             <div class="as_post">Co-founder, <span><a href="https://playkey.io" target="_blank" rel="nofollow">CTO Playkey</a></span></div>
+                        </div>
+                        <div class="advisor_slide">
+                            <div class="as_photo">
+                                <img src="./img/team/TBA.jpg" alt="">
+                            </div>
+                            <div class="as_name"></div>
+                            <div class="as_post"><span></span></div>
                         </div>
                         <div class="advisor_slide">
                             <div class="as_photo">
@@ -1423,6 +1403,8 @@
                     $(this).addClass('slideDown');
                 }
             });
+
+            $(".youtube").YouTubePopUp( { autoplay: 0 } );
 
             var typed = new Typed('#cursor_uc', {
                 strings: [

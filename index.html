@@ -14,6 +14,7 @@
     <script src="vendors/jquery.easings.min.js"></script>
     <script type="text/javascript" src="./vendors/scrolloverflow.min.js"></script>
     <script type="text/javascript" src="./js/jquery.fullPage.js"></script>
+    <script type="text/javascript" src="./js/typed.min.js"></script>
     <script type="text/javascript" src="./js/main.js"></script>
     <script type="text/javascript" src="./js/slick.min.js"></script>
     <title>Blockchain, Risk Managment, Platform</title>
@@ -102,15 +103,15 @@
         </section>
         <section class="section platform_ico">
             <div class="platform">
-                <a href="#platform"></a>
+                <a href="#threePage"></a>
                 <div class="title_platform">Platform</div>
             </div>
             <div class="ico">
-                <a href="#ico"></a>
+                <a href="#sixPage"></a>
                 <div class="title_ico">ICO</div>
             </div>
         </section>
-        <section id="platform" class="section problems_section">
+        <section class="section problems_section">
             <div class="container">
                 <div class="problems_title">The Problems</div>
                 <div class="problems_description">We know all the problems of credit risk managment players,
@@ -340,11 +341,11 @@
                             </p>
                         </div>
                     </div>
-                    <div class="uc">Use Cases: <span id="cursor_uc">Online Loan |</span></div>
+                    <div class="uc">Use Cases: <span id="cursor_uc"></span></div>
                 </div>
             </div>
         </section>
-        <section id="ico" class="section token_section">
+        <section class="section token_section">
             <div class="container">
                 <div class="token_title">The Token</div>
                 <div class="token_description">Truly disruptive technologies</div>
@@ -1420,6 +1421,21 @@
                     $('.slideDown').removeClass('slideDown');
                     $(this).addClass('slideDown');
                 }
+            });
+
+            var typed = new Typed('#cursor_uc', {
+                strings: [
+                    "Consumer Credits",
+                    "P2P Loans",
+                    "Mortgages",
+                    "Online Loans",
+                    "Auto Loans",
+                    "SME Credits",
+                    "POS Loans",
+                    "Installment Loans"
+                ],
+                typeSpeed: 60,
+                loop: true
             });
         });
     </script>

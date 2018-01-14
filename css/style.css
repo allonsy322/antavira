@@ -1752,10 +1752,9 @@ ul.selected_lang li.l_active:hover {
 }
 .received {
     color: #0d0d0d;
-    text-align: left;
+    text-align: center;
     position: relative;
     margin-bottom: 30px;
-    padding-left: calc(195px + 32px);
 }
 .cash {
     font-size: 25px;

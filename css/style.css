@@ -99,8 +99,9 @@ ul.menu li a:hover::after, ul.menu li.active a::after {
     -moz-transform: translateX(6px);
 }
 .fp-viewing-onePage ul.menu li a,
-.fp-viewing-twoPage ul.menu li a,
-.fp-viewing-fivePage ul.menu li a {
+.fp-viewing-twoPage-0 ul.menu li a,
+.fp-viewing-fivePage ul.menu li a,
+.fp-viewing-twoPage-3 ul.menu li a {
     color: #fff;
     transition-delay: 300ms;
 }
@@ -160,8 +161,9 @@ ul.menu:before {
     transition-delay: 300ms;
 }
 .fp-viewing-onePage ul.menu:before,
-.fp-viewing-twoPage ul.menu:before,
-.fp-viewing-fivePage ul.menu:before{
+.fp-viewing-twoPage-0 ul.menu:before,
+.fp-viewing-fivePage ul.menu:before,
+.fp-viewing-twoPage-3 ul.menu:before{
     background-image: url(../img/logo_white.png);
 }
 .home_left {
@@ -365,7 +367,7 @@ input.fs_inputs {
     color: #9c9c9c;
 }
 .platform {
-    height: 50%;
+    height: 100%;
     background: #141414;
     z-index: 9;
     position: relative;
@@ -373,7 +375,7 @@ input.fs_inputs {
     width:100%;
 }
 .ico {
-    height: 50%;
+    height: 100%;
     background: #008a55;
     position:relative;
     display:table;
@@ -408,7 +410,7 @@ input.fs_inputs {
     z-index: 9;
 }
 .title_ico:before, .title_platform:before {
-    content: '+';
+    /* content: '+'; */
     position: absolute;
     display: table-cell;
     vertical-align: middle;
@@ -458,7 +460,7 @@ textarea {
     padding: 9px 15px;
     color: #008a55;
 }
-section.problems_section {
+.problems_section {
     background-image: url(../img/red_back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -573,7 +575,7 @@ li {
 .square:before {
     background-image: url(../img/square.png);
 }
-section.antavira_section {
+.antavira_section {
     background-image: url(../img/green_back.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -609,7 +611,7 @@ section.antavira_section {
     display: inline-block;
     position: relative;
 }
-section.innovations_section {
+.innovations_section {
     background-image: url(../img/black_fon.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -878,7 +880,7 @@ section.innovations_section {
     margin-bottom: 30px;
 }
 
-section.campaing_section {
+.campaing_section {
     color: #0d0d0d;
 }
 
@@ -1736,7 +1738,12 @@ ul.selected_lang li.l_active:hover {
 .fp-viewing-threePage .languages,
 .fp-viewing-sixPage .languages,
 .fp-viewing-fourPage .languages,
-.fp-viewing-twelvePage .languages {
+.fp-viewing-twelvePage .languages,
+.fp-viewing-twoPage-1 .languages,
+.fp-viewing-twoPage-2 .languages,
+.fp-viewing-thrPage-0 .languages,
+.fp-viewing-thrPage-1 .languages,
+.fp-viewing-thrPage-2 .languages {
     color:#0d0d0d;
 }
 .fp-viewing-sevenPage .languages:after,
@@ -1867,8 +1874,9 @@ ul.selected_lang li.l_active:hover {
 input.fs_inputs:focus {
     border: 1px solid #008a55;
 }
-body.fp-viewing-threePage header,
-body.fp-viewing-fourPage header {
+body.fp-viewing-twoPage-2 header,
+body.fp-viewing-twoPage-1 header,
+body.fp-viewing-thrPage-0 header {
     padding-bottom: 20px;
     width: 100%;
     background: #fff;
@@ -1882,7 +1890,7 @@ body.fp-viewing-fourPage header {
     content: counter(item) ". ";
     font-weight: bold;
 }
-section.experience_section {
+.experience_section {
     background-image: url(../img/fon_map.jpg);
     background-position: center;
     background-size: cover;
@@ -1949,6 +1957,9 @@ label[for="f_sub"]:before {
     background: #008a55;
     z-index: 1;
     transition: top 300ms, left 300ms;
+}
+.platform_ico {
+    z-index: 10;
 }
 .smf_send_btn:hover + label[for="f_sub"]:before {
     top: -8px;
@@ -2027,6 +2038,28 @@ input#f_sub:hover {
     bottom: -100px;
     height: 300px;
     left: 50%;
+}
+.section .fp-controlArrow {
+    width: 100px !important;
+    height: 100px;
+    border: none;
+    background-size: cover;
+}
+.fp-controlArrow.fp-prev {
+    background-image: url(../img/rw-arrow.png);
+    transform: rotate(180deg);
+}
+.fp-controlArrow.fp-next {
+    background-image: url(../img/rw-arrow.png);
+}
+.fp-viewing-thrPage-1 .fp-controlArrow.fp-prev,
+.fp-viewing-thrPage-2 .fp-controlArrow.fp-prev{
+    background-image: url(../img/rb-arrow.png);
+    transform: rotate(180deg);
+}
+.fp-viewing-thrPage-1 .fp-controlArrow.fp-next,
+.fp-viewing-thrPage-2 .fp-controlArrow.fp-next {
+    background-image: url(../img/rb-arrow.png);
 }
 @media screen and (max-height:800px){
     .white_word {
@@ -3043,9 +3076,6 @@ input#f_sub:hover {
     }
     .form_sub {
         margin-bottom: 20px;
-    }
-    section.platform_ico {
-        display: none;
     }
     .diagram {
         width: 145px;

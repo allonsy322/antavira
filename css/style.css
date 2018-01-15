@@ -252,7 +252,7 @@ html body {
     text-transform: uppercase;
     letter-spacing: 5px;
     height: 38px;
-    background: url(../img/risk.png) no-repeat;
+    background: url(../img/risk_n.png) no-repeat;
 }
 .form_subscribe_title {
     font-size: 16px;
@@ -504,7 +504,7 @@ section.problems_section {
     position: absolute;
     left: 40px;
     top: 30px;
-    background: rgba(0,0,0, 0.5);
+    background: rgba(0,0,0, 1);
     padding: 30px 20px 20px 35px;
     width: max-content;
     z-index: 10;
@@ -1198,6 +1198,7 @@ p.cdd {
     width: 287px;
     height: 175px;
     box-shadow: -5px 4px 10px rgba(0,0,0,0.2);
+    z-index: 10;
 }
 .qustion_ico {
     width: 29px;
@@ -1220,6 +1221,7 @@ p.cdd {
     left: 17px;
     bottom: -125px;
     box-shadow: 5px 6px 10px rgba(0,0,0,0.2);
+    z-index: 10;
 }
 .answer_ico {
     width: 29px;
@@ -1596,7 +1598,7 @@ p.cdd {
 .send_message_form {
     float: left;
     width: 306px;
-    margin-left: 200px;
+    margin-left: 134px;
 }
 input.smf_input {
     width: 100%;

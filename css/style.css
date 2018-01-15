@@ -3146,4 +3146,23 @@ input#f_sub:hover {
     .foot_copyright {
         float: none;
     }
+    .miners {
+        position: relative;
+        display: block;
+        bottom: auto;
+        text-align: left;
+    }
+    .smart_contrakt {
+        width: 147px;
+        display: block;
+        margin-bottom: 25px;
+    }
+    .miner {
+        text-align: left;
+        margin: 25px 0 25px 0;
+    }
+    .smart_contrakt:before {
+        left:auto;
+        right: -50px;
+    }
 }

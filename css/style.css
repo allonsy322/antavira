@@ -2080,14 +2080,17 @@ input#f_sub:hover {
     }
     .main_title {
         margin-bottom: 15%;
-        margin-top: 7%;
+        margin-top: 12%;
     }
     .rm {
         margin-bottom: 20%;
-        margin-top: 7%;
+        margin-top: 12%;
     }
     .form_sub {
         margin-bottom: 21%;
+    }
+    a.youtube {
+        top: 86px;
     }
     .home_socials {
         margin-top: 10%;

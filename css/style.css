@@ -657,11 +657,14 @@ section.innovations_section {
     background: #008a55;
     z-index: 10;
     position: relative;
-    min-width: 429px;
+    /* min-width: 429px; */
 }
 .lr_active .inn_contr {
     margin-right: 0px;
     border: 1px dashed rgba(255,255,255, 0.5);
+}
+.lr_active .inn_title {
+    min-width: 429px;
 }
 .inn_contr:hover {
     cursor: pointer;
@@ -1576,9 +1579,12 @@ p.cdd {
     display: none;
     max-width: 514px;
     padding: 13px 35px 13px 20px;
+    text-align: left;
 }
 .questions_answ {
-    float: left;
+    /* float: left; */
+    display: inline-block;
+    vertical-align: top;
 }
 .qa {
     color: #0d0d0d;
@@ -1591,14 +1597,17 @@ p.cdd {
     position: relative;
     width: 514px;
     font-weight: 600;
+    text-align: left;
 }
 .qa_qustion:hover {
     cursor: pointer;
 }
 .send_message_form {
-    float: left;
+    /* float: left; */
+    display: inline-block;
     width: 306px;
     margin-left: 134px;
+    vertical-align: top;
 }
 input.smf_input {
     width: 100%;
@@ -2068,6 +2077,9 @@ input#f_sub:hover {
     top: -20px;
     background-image: url(../img/smart_c.png);
 }
+.faq_section {
+    text-align: center;
+}
 @media screen and (max-height:800px){
     .white_word {
         font-size: 30px;
@@ -2096,8 +2108,8 @@ input#f_sub:hover {
         margin-top: 10%;
     }
     .home_ico {
-        padding: 20px 0px 20px 62px;
-        background-size: 47px;
+        padding: 16px 0px 16px 62px;
+        background-size: 49px;
     }
     .home_copyright {
         margin-top: 20%;
@@ -2117,11 +2129,11 @@ input#f_sub:hover {
         margin-top: 100px;
     }
     .problema {
-        margin-bottom: 57px;
+        margin-bottom: 111px;
     }
     .problems_title {
         margin-bottom: 23px;
-        margin-top: 15px;
+        margin-top: 105px;
     }
     .av_schema {
         width: 360px;
@@ -2161,7 +2173,7 @@ input#f_sub:hover {
         margin-bottom: 10px;
     }
     .tlb_title {
-        font-size: 100px;
+        font-size: 110px;
     }
     .diagram {
         width: 128px;

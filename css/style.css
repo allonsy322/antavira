@@ -654,10 +654,8 @@ section.innovations_section {
     font-weight: 600;
     text-transform: uppercase;
     padding: 8px 30px 8px 15px;
-    background: #008a55;
     z-index: 10;
     position: relative;
-    /* min-width: 429px; */
 }
 .lr_active .inn_contr {
     margin-right: 0px;
@@ -665,15 +663,16 @@ section.innovations_section {
 }
 .lr_active .inn_title {
     min-width: 429px;
+    background: #008a55;
 }
 .inn_contr:hover {
     cursor: pointer;
 }
 .lr_active .inn_contr:before {
     content: '';
-    width: 683px;
+    width: 678px;
     height: 1px;
-    left: -175px;
+    left: -168px;
     top: calc(50% - 2px);
     border: 0.5px dashed rgba(255,255,255, 0.4);
     position: absolute;
@@ -2319,6 +2318,10 @@ input#f_sub:hover {
     }
     .column_first .cf_item:first-child {
         margin-top: 84px;
+    }
+    .lr_active .inn_contr:before {
+        left: -131px;
+        width: 640px;
     }
 }
 @media screen and (max-width:1199px){

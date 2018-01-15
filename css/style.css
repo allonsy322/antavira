@@ -2027,6 +2027,45 @@ input#f_sub:hover {
     height: 300px;
     left: 50%;
 }
+.miner {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 146px;
+    position: relative;
+    text-align: right;
+    margin-right: 200px;
+}
+.smart_contrakt {
+    display: inline-block;
+    font-size: 14px;
+    text-transform: uppercase;
+    position: relative;
+}
+.miners {
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    bottom: -35px;
+}
+.miner:after {
+    content: '';
+    width: 39px;
+    height: 39px;
+    position: absolute;
+    right: -44px;
+    top: -12px;
+    background-image: url(../img/miners.png);
+}
+.smart_contrakt:before {
+    content: '';
+    width: 53px;
+    height: 53px;
+    position: absolute;
+    left: -48px;
+    top: -20px;
+    background-image: url(../img/smart_c.png);
+}
 @media screen and (max-height:800px){
     .white_word {
         font-size: 30px;
@@ -2038,15 +2077,15 @@ input#f_sub:hover {
         font-size: 27px;
     }
     .main_title {
-        margin-bottom: 0%;
-        margin-top: 22%;
+        margin-bottom: 15%;
+        margin-top: 7%;
     }
     .rm {
-        margin-bottom: 7%;
-        margin-top: 18%;
+        margin-bottom: 20%;
+        margin-top: 7%;
     }
     .form_sub {
-        margin-bottom: 10%;
+        margin-bottom: 21%;
     }
     .home_socials {
         margin-top: 10%;
@@ -2056,7 +2095,7 @@ input#f_sub:hover {
         background-size: 47px;
     }
     .home_copyright {
-        margin-top: 10%;
+        margin-top: 20%;
     }
     .platform:after {
         font-size: 180px;
@@ -2070,13 +2109,14 @@ input#f_sub:hover {
         background-repeat: no-repeat;
     }
     .all_problems {
-        margin-top: 60px;
+        margin-top: 100px;
     }
     .problema {
         margin-bottom: 57px;
     }
     .problems_title {
         margin-bottom: 23px;
+        margin-top: 15px;
     }
     .av_schema {
         width: 360px;
@@ -2168,7 +2208,7 @@ input#f_sub:hover {
         margin-bottom: 34px;
     }
     .cf_item {
-        margin-bottom: 30px;
+        margin-bottom: 18px;
     }
     .cs_logo {
         margin-bottom: 20px;
@@ -2251,6 +2291,18 @@ input#f_sub:hover {
     footer {
         padding: 12px 0 5px;
     }
+    .antavira_title {
+        margin-top: 50px;
+    }
+    .ob_label {
+        display: none;
+    }
+    .news_slide {
+        min-height: 1px !important;
+    }
+    .column_first .cf_item:first-child {
+        margin-top: 84px;
+    }
 }
 @media screen and (max-width:1199px){
     .youtube {
@@ -2264,15 +2316,12 @@ input#f_sub:hover {
         background-repeat: no-repeat;
         background-size: 63px;
     }
-    .green_line_row {
-        /* width: 602px; */
-    }
     ul.menu:before {
         background-size: 100%;
         width: 80px;
         height: 41px;
         background-repeat: no-repeat;
-        top: 28px;
+        top: 20px;
     }
     .home_left:after {
         background-size: 273px;
@@ -2356,16 +2405,6 @@ input#f_sub:hover {
         padding: 10px 0px;
         min-width: auto;
         width: 102px;
-    }
-    .grey_row {
-        /* width: 602px; */
-    }
-    .grl_label, .gr_label, .br_label, .ob_label {
-        /* font-size: 16px; */
-        /* left: -202px; */
-    }
-    .blue_row {
-        /* width: 602px; */
     }
     .campaing_title {
         font-size: 30px;
@@ -2581,14 +2620,10 @@ input#f_sub:hover {
     }
 
     .grl_label, .gr_label, .br_label, .ob_label {
-        /* position: absolute; */
-        /* top: -37px; */
         display: block;
         width: calc(100% - 1px);
-        /* left: 1px; */
         transform: none;
         margin: 0;
-        /* display: none; */
     }
     .opacity_block {
         display: none;

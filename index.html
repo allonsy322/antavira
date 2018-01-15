@@ -26,12 +26,13 @@
         <div class="container">
             <ul id="menu" class="menu">
                 <li data-menuanchor="onePage" class="active"><a href="#onePage">Home</a></li>
-                <li data-menuanchor="twoPage"><a href="#twoPage">Platform/ICO</a></li>
+                <li data-menuanchor="threePage"><a href="#threePage">Platform</a></li>
+                <li data-menuanchor="sixPage"><a href="#sixPage">ICO</a></li>
                 <!--<li data-menuanchor="fivePage"><a href="#fivePage">ICO</a></li>-->
                 <!--<li data-menuanchor="threePage"><a href="#threePage"></a></li>-->
                 <!--<li data-menuanchor="fourPage"><a href="#fourPage"></a></li>-->
                 <!--<li data-menuanchor="fivePage"><a href="#fivePage"></a></li>-->
-                <!--<li data-menuanchor="sixPage"><a href="#sixPage"></a></li>-->
+
                 <!--<li data-menuanchor="sevenPage"><a href="#sevenPage"></a></li>-->
                 <li data-menuanchor="eightPage"><a href="#eightPage">Experience</a></li>
                 <li data-menuanchor="ninePage"><a href="#ninePage">News</a></li>
@@ -105,20 +106,20 @@
                 </div>
             </div>
         </section>
-        <section class="section platform_ico">
-            <div class="platform">
-                <a href="#threePage"></a>
-                <div class="title_platform">Platform</div>
-            </div>
-            <div class="ico">
-                <a href="#sixPage"></a>
-                <div class="title_ico">ICO</div>
-            </div>
-            <div class="bot_arr">
-                <div class="arrow arrow-first"></div>
-                <div class="arrow arrow-second"></div>
-            </div>
-        </section>
+        <!--<section class="section platform_ico">-->
+            <!--<div class="platform">-->
+                <!--<a href="#threePage"></a>-->
+                <!--<div class="title_platform">Platform</div>-->
+            <!--</div>-->
+            <!--<div class="ico">-->
+                <!--<a href="#sixPage"></a>-->
+                <!--<div class="title_ico">ICO</div>-->
+            <!--</div>-->
+            <!--<div class="bot_arr">-->
+                <!--<div class="arrow arrow-first"></div>-->
+                <!--<div class="arrow arrow-second"></div>-->
+            <!--</div>-->
+        <!--</section>-->
         <section class="section problems_section">
             <div class="container">
                 <div class="problems_title">The Problems</div>
@@ -284,6 +285,10 @@
                                 </ul>
                             </div>
                         </div>
+                    </div>
+                    <div class="miners">
+                        <div class="miner">Miners</div>
+                        <div class="smart_contrakt">Smart contracts</div>
                     </div>
                 </div>
             </div>
@@ -1247,7 +1252,7 @@
         $(document).ready(function() {
             if(window.screen.width >= 768) {
                 $('#fullpage').fullpage({
-                    anchors: ['onePage', 'twoPage', 'threePage', 'fourPage', 'fivePage','sixPage','sevenPage','eightPage', 'ninePage', 'tenPage', 'elevenPage', 'twelvePage'],
+                    anchors: ['onePage', 'threePage', 'fourPage', 'fivePage','sixPage','sevenPage','eightPage', 'ninePage', 'tenPage', 'elevenPage', 'twelvePage'],
                     menu: '#menu',
                     css3:true
                 });

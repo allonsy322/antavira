@@ -212,6 +212,7 @@ html body {
     padding: 30px 0px 30px 80px;
     font-size: 17px;
     background-repeat: no-repeat;
+    background-position: 0px 50%;
 }
 .money {
     background-image: url(../img/ico_pay.png);
@@ -224,8 +225,7 @@ html body {
 }
 .home_copyright {
     margin-top: 90px;
-    font-size: 17.58px;
-    /* margin-left: 50px; */
+    font-size: 15px;
     position: relative;
     display: inline-block;
 }
@@ -258,7 +258,7 @@ html body {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-bottom: 25px;
+    margin-bottom: 14px;
 }
 input.fs_inputs {
     width: 303px;
@@ -517,7 +517,7 @@ section.problems_section {
     padding: 0 3px;
     line-height: 1.1;
     margin-bottom: 15px;
-    text-shadow: 0px 0px 2px #000;
+    text-shadow: 1px 0px 2px #403f3f;
 }
 .ktp {
     font-size: 18px;
@@ -527,12 +527,13 @@ section.problems_section {
 }
 .ktp:before {
     content: '';
-    width: 25px;
-    height: 25px;
+    width: 26px;
+    height: 26px;
     position: absolute;
     left: 0;
     background-image: url(../img/ktp.png);
     background-size: 100%;
+    background-repeat: no-repeat;
     z-index: 15;
 }
 .knowling:hover {
@@ -677,6 +678,7 @@ section.innovations_section {
     border: 0.5px dashed rgba(255,255,255, 0.4);
     position: absolute;
     z-index: 1;
+    opacity: 0.5;
 }
 .lr_active .ico_inn {
     background-image: url(../img/inn_polygon.png);
@@ -1115,8 +1117,9 @@ section.experience_section.fp-section {
     display: inline-block;
     vertical-align: middle;
     text-align: left;
-    font-size: 18px;
+    font-size: 14px;
     margin-left: 12px;
+    text-transform: uppercase;
 }
 .company_desc {
     padding: 30px;
@@ -1206,6 +1209,7 @@ p.cdd {
     width: 29px;
     height: 34px;
     background-image: url(../img/question.png);
+    background-repeat: no-repeat;
     margin-top: 8px;
     margin-right: 0px;
 }
@@ -1323,7 +1327,7 @@ p.cdd {
     font-size: 12px;
     color: #0d0d0d;
     line-height: 1.4;
-    padding: 0 15px 30px;
+    padding: 0px 15px 18px;
 }
 .news_slide:hover {
     cursor: pointer;
@@ -1392,7 +1396,7 @@ p.cdd {
     display: none;
     position: absolute;
     width: 100%;
-    height: 100%;
+    height: calc(100% + 2px);
     text-align: center;
     padding-top: 90px;
     top: 50%;
@@ -1605,8 +1609,9 @@ p.cdd {
     /* float: left; */
     display: inline-block;
     width: 306px;
-    margin-left: 134px;
+    margin-left: 110px;
     vertical-align: top;
+    height: 100%;
 }
 input.smf_input {
     width: 100%;
@@ -1629,7 +1634,7 @@ form.send_message {
 .smf_send_btn {
     display: inline-block;
     background: #008a55;
-    margin-top: 30px;
+    margin-top: 80px;
     padding: 13px 100px;
     font-size: 16px;
     color: #fff;
@@ -1836,6 +1841,7 @@ ul.selected_lang li.l_active:hover {
 }
 .main_standart {
     margin-top: 20px;
+    margin-bottom: 2px;
 }
 .youtube {
     width: 101px;
@@ -2079,6 +2085,38 @@ input#f_sub:hover {
 .faq_section {
     text-align: center;
 }
+p.cdd span {
+    font-weight: 600;
+}
+.kostolneda {
+    display: none;
+}
+.tokens_container .show_me_d {
+    display: block;
+    position: absolute;
+    top: 50%;
+    background: #fff;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 25;
+}
+.tokens_container .show_me_d:before {
+    display: none;
+}
+.opf:hover {
+    cursor: pointer;
+}
+.opf {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    background: #000;
+    opacity: 0.4;
+    z-index: 20;
+}
 @media screen and (max-height:800px){
     .white_word {
         font-size: 30px;
@@ -2120,9 +2158,10 @@ input#f_sub:hover {
         font-size: 180px;
     }
     .home_left:after {
-        background-size: 354px;
-        width: 354px;
+        background-size: 410px;
+        width: 402px;
         background-repeat: no-repeat;
+        top: 12px;
     }
     .all_problems {
         margin-top: 100px;
@@ -2173,14 +2212,16 @@ input#f_sub:hover {
     }
     .tlb_title {
         font-size: 110px;
+        line-height: 0.8em;
+        margin-bottom: 10px;
     }
     .diagram {
-        width: 128px;
-        height: 128px;
+        width: 140px;
+        height: 140px;
         background-size: cover;
     }
     .proc {
-        font-size: 16px;
+        font-size: 18px;
     }
     .proc_item {
         margin-bottom: 10px;
@@ -2189,7 +2230,7 @@ input#f_sub:hover {
         padding-left: 191px;
     }
     .proc_des {
-        font-size: 10px;
+        font-size: 12px;
     }
     .gr_item {
         padding: 5px 10px;
@@ -2246,7 +2287,7 @@ input#f_sub:hover {
         max-width: 60px;
     }
     .news_slide {
-        margin-bottom: -24px;
+        /* margin-bottom: -24px; */
     }
     .ns_prev, .ns_next {
         left: -39px;
@@ -2263,7 +2304,7 @@ input#f_sub:hover {
         margin-top: 50px;
     }
     .photo_block img {
-        width: 65%;
+        width: 100%;
         margin: 0 auto;
     }
     .team_title {
@@ -2275,7 +2316,6 @@ input#f_sub:hover {
         margin-bottom: 6px;
     }
     .as_photo {
-        max-height: 162px;
         overflow: hidden;
     }
     .as_name {
@@ -2314,7 +2354,8 @@ input#f_sub:hover {
         display: none;
     }
     .news_slide {
-        min-height: 1px !important;
+        min-height: 200px !important;
+        height: auto !important;
     }
     .column_first .cf_item:first-child {
         margin-top: 84px;
@@ -2323,13 +2364,50 @@ input#f_sub:hover {
         left: -131px;
         width: 640px;
     }
+    span#cursor {
+        font-size: 16px;
+    }
+    .md a {
+        font-size: 21px;
+    }
+    div.cursor {
+        margin-bottom: 33px;
+    }
+    .miner {
+        margin-right: 165px;
+    }
+    .smart_contrakt:before {
+        width: 49px;
+        height: 49px;
+        background-size: 100%;
+        top: -17px;
+    }
+    .media_block {
+        padding: 0 22px;
+    }
+    .news_slider {
+        height: 215px;
+    }
+
+    .ns_data {
+        margin-bottom: 5px;
+    }
+    .kostolneda {
+        display: inline-block;
+        background: #008a55;
+        color: #fff;
+        border: none;
+    }
+    .kostolneda:hover {
+        cursor: pointer;
+    }
 }
 @media screen and (max-width:1199px){
-    .youtube {
+    a.youtube {
         width: 59px;
         height: 45px;
-        top: 174px;
-        right: -243px;
+        top: 132px;
+        right: -267px;
         z-index: 10;
         position: absolute;
         background-image: url(../img/youtube.png);
@@ -2344,10 +2422,10 @@ input#f_sub:hover {
         top: 20px;
     }
     .home_left:after {
-        background-size: 273px;
-        width: 290px;
-        top: 120px;
-        right: -250px;
+        background-size: 310px;
+        width: 316px;
+        top: 66px;
+        right: -275px;
         background-repeat: no-repeat;
     }
     .platform:after {
@@ -2391,6 +2469,9 @@ input#f_sub:hover {
     }
     .inn_title {
         font-size: 14px;
+        min-width: 314px;
+    }
+    .lr_active .inn_title {
         min-width: 314px;
     }
     .lr_active .inn_contr:before {
@@ -2524,13 +2605,20 @@ input#f_sub:hover {
         font-size: 16px;
     }
     .ob_label {
-        display:none;
+        display: none;
+    }
+    .kostolneda {
+        display: inline-block;
     }
     .news_slide {
         min-height: 1px !important;
     }
     .column_first .cf_item:first-child {
         margin-top: 0;
+    }
+    .diagram {
+        width: 135px;
+        height: 135px;
     }
 }
 @media screen and (max-width:991px){
@@ -2757,6 +2845,12 @@ input#f_sub:hover {
     .nav_slode .ns_next {
         left: auto;
         right: -37px;
+    }
+    .kostolneda {
+        display: inline-block;
+        background: #008a55;
+        color: #fff;
+        border: none;
     }
 }
 @media screen and (max-width:767px){
@@ -3184,5 +3278,8 @@ input#f_sub:hover {
     .smart_contrakt:before {
         left:auto;
         right: -50px;
+    }
+    .kostolneda {
+        display: none;
     }
 }

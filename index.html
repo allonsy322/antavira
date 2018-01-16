@@ -410,6 +410,7 @@
 
         </section>
         <section class="section campaing_section">
+            <div class="opf"></div>
             <div class="container">
                 <div class="campaing_title">The Campaign</div>
                 <div class="campaing_descrip">Transparent and fair</div>
@@ -517,6 +518,7 @@
                             <div class="br_proc">+30%</div>
                         </div>
                     </div>
+                    <div class="ob_label kostolneda">Details</div>
                     <div class="ob_label">Details</div>
                     <div class="opacity_block">
                         <ol>
@@ -1383,6 +1385,15 @@
                 ],
                 typeSpeed: 60,
                 loop: true
+            });
+
+            $('.kostolneda').on('click', function () {
+                $('.opacity_block').addClass('show_me_d');
+                $('.opf').css({'display':'block'});
+            });
+            $('.opf').on('click', function () {
+                $('.opacity_block').removeClass('show_me_d');
+                $('.opf').css({'display':'none'});
             });
 
 

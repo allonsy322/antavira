@@ -2137,13 +2137,13 @@ p.cdd span {
         margin-top: 12%;
     }
     .form_sub {
-        margin-bottom: 21%;
+        margin-bottom: 13%;
     }
     a.youtube {
         top: 86px;
     }
     .home_socials {
-        margin-top: 10%;
+        margin-top: 13%;
     }
     .home_ico {
         padding: 16px 0px 16px 62px;
@@ -2165,7 +2165,7 @@ p.cdd span {
         top: 12px;
     }
     .all_problems {
-        margin-top: 75px;
+        margin-top: 85px;
     }
     .problema {
         margin-bottom: 111px;
@@ -2337,11 +2337,11 @@ p.cdd span {
         margin-top: 50px;
     }
     .faq_disc {
-        margin-bottom: 20px;
+        margin-bottom: 15px;
     }
     .faq_title {
         margin-bottom: 5px;
-        margin-top: -50px;
+        margin-top: -20px;
     }
     textarea {
         height: 127px;
@@ -2411,6 +2411,9 @@ p.cdd span {
     }
     .advisors_sliders_container {
         padding: 0 50px;
+    }
+    .photo_description {
+        padding-top: 60px;
     }
 }
 @media screen and (max-width:1199px){

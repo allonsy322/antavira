@@ -2165,7 +2165,7 @@ p.cdd span {
         top: 12px;
     }
     .all_problems {
-        margin-top: 150px;
+        margin-top: 75px;
     }
     .problema {
         margin-bottom: 111px;
@@ -2305,8 +2305,9 @@ p.cdd span {
         margin-top: 50px;
     }
     .photo_block img {
-        width: 100%;
+        width: 80%;
         margin: 0 auto;
+        border: 1px dashed #d0d0d0;
     }
     .team_title {
         margin-bottom: 0px;
@@ -2401,6 +2402,15 @@ p.cdd span {
     }
     .kostolneda:hover {
         cursor: pointer;
+    }
+    .team_sliders_container {
+        padding: 0 100px;
+    }
+    .photo_block {
+        border: none;
+    }
+    .advisors_sliders_container {
+        padding: 0 50px;
     }
 }
 @media screen and (max-width:1199px){
@@ -2853,6 +2863,7 @@ p.cdd span {
         color: #fff;
         border: none;
     }
+
 }
 @media screen and (max-width:767px){
     .arrow {

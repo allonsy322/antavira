@@ -3183,6 +3183,7 @@ p.cdd span {
     }
     .news_slide {
         margin-right: 0;
+        min-height: 286px !important;
     }
     .md {
         padding: 18px 0 18px 40px;
@@ -3300,5 +3301,20 @@ p.cdd span {
     }
     .inn_title {
         min-width: auto;
+    }
+    .team_sliders_container {
+        padding: 0;
+    }
+    .advisors_sliders_container {
+        padding: 0;
+    }
+    .team_slider {
+        padding: 0 20px;
+    }
+    .news_slider {
+        height: auto;
+    }
+    .team_title {
+        margin-top: 20px;
     }
 }

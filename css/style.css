@@ -593,8 +593,8 @@ section.antavira_section {
 }
 .av_schema {
     margin: 0 auto;
-    width: 470px;
-    height: 470px;
+    width: 550px;
+    height: 550px;
     background-image: url(../img/shema_antavira.svg);
     background-repeat: no-repeat;
     background-size: 90%;
@@ -1463,6 +1463,7 @@ p.cdd {
 }
 .as_photo img {
     margin: 0 auto;
+    width: 100%;
 }
 .as_post {
     font-size: 18px;
@@ -2051,7 +2052,7 @@ input#f_sub:hover {
     width: 146px;
     position: relative;
     text-align: right;
-    margin-right: 200px;
+    margin-right: 222px;
 }
 .smart_contrakt {
     display: inline-block;
@@ -2063,7 +2064,7 @@ input#f_sub:hover {
     text-align: center;
     position: absolute;
     width: 100%;
-    bottom: -35px;
+    bottom: -12px;
 }
 .miner:after {
     content: '';
@@ -2117,6 +2118,10 @@ p.cdd span {
     background: #000;
     opacity: 0.4;
     z-index: 20;
+}
+.as_photo {
+    overflow: hidden;
+    padding: 0 20px;
 }
 @media screen and (max-height:800px){
     .white_word {
@@ -2175,8 +2180,8 @@ p.cdd span {
         margin-top: 140px;
     }
     .av_schema {
-        width: 410px;
-        height: 410px;
+        width: 440px;
+        height: 440px;
         margin-top: -35px;
     }
     .innovations_description {
@@ -2306,7 +2311,7 @@ p.cdd span {
         margin-top: 50px;
     }
     .photo_block img {
-        width: 80%;
+        width: 90%;
         margin: 0 auto;
         border: 1px dashed #d0d0d0;
     }
@@ -2320,6 +2325,7 @@ p.cdd span {
     }
     .as_photo {
         overflow: hidden;
+        padding: 0 5px;
     }
     .as_name {
         margin-top: 5px;
@@ -2377,7 +2383,7 @@ p.cdd span {
         margin-bottom: 33px;
     }
     .miner {
-        margin-right: 165px;
+        margin-right: 200px;
     }
     .smart_contrakt:before {
         width: 49px;
@@ -2405,16 +2411,19 @@ p.cdd span {
         cursor: pointer;
     }
     .team_sliders_container {
-        padding: 0 100px;
+        padding: 0 20px;
     }
     .photo_block {
         border: none;
     }
     .advisors_sliders_container {
-        padding: 0 50px;
+        padding: 0 160px;
     }
     .photo_description {
         padding-top: 60px;
+    }
+    .team_slider {
+        margin-top: 20px;
     }
 }
 @media screen and (max-width:1199px){

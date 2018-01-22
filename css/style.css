@@ -987,8 +987,8 @@ section.campaing_section {
     /* left: -226px; */
     background: #fff;
     text-align: center;
-    display: inline-block;
     margin-right: 25px;
+    display: inline-block;
 }
 .br_eth {
     font-size: 18px;
@@ -1003,15 +1003,14 @@ section.campaing_section {
 }
 .opacity_block {
     position: relative;
-    width: 100%;
     margin: 0 auto;
     color: #0d0d0d;
     text-align: left;
-    padding: 20px 35px 15px 35px;
     border: 1px dashed #939393;
-    width: calc(100% - 195px - 32px);
-    display: inline-table;
     vertical-align: middle;
+    padding: 9px 35px 15px 20px;
+    width: 730px;
+    display: none;
 }
 .grey_row:before,
 .opacity_block:before,
@@ -1102,7 +1101,7 @@ section.experience_section.fp-section {
     width: 290px;
     padding: 23px 27px;
     border: 1px dashed #939393;
-    margin-bottom: 57px;
+    margin-bottom: 87px;
     text-align: center;
     background: #fff;
 }
@@ -1122,7 +1121,7 @@ section.experience_section.fp-section {
     text-transform: uppercase;
 }
 .company_desc {
-    padding: 30px;
+    padding: 60px 30px;
     border: 1px dashed #939393;
     background: #fff;
 }
@@ -1153,7 +1152,7 @@ p.cdd {
     margin-right: 10px;
 }
 .nom_item {
-    margin-bottom: 15px;
+    margin-bottom: 5px;
 }
 .avi_title {
     font-size: 21px;
@@ -1768,9 +1767,11 @@ ul.selected_lang li.l_active:hover {
 }
 .received {
     color: #0d0d0d;
-    text-align: center;
+    text-align: left;
     position: relative;
     margin-bottom: 30px;
+    display: inline-block;
+    width: calc(100% - 195px - 32px);
 }
 .cash {
     font-size: 25px;
@@ -1907,7 +1908,7 @@ section.experience_section {
     margin-bottom: 0;
 }
 .column_first .cf_item:first-child {
-    margin-top: 111px;
+    /* margin-top: 111px; */
 }
 .nom_title a:hover {
     color: #008a55;
@@ -2092,6 +2093,10 @@ p.cdd span {
 }
 .kostolneda {
     display: none;
+    display: inline-block;
+    background: #008a55;
+    color: #fff;
+    border: none;
 }
 .tokens_container .show_me_d {
     display: block;
@@ -2272,13 +2277,13 @@ p.cdd span {
         margin-bottom: 34px;
     }
     .cf_item {
-        margin-bottom: 18px;
+        margin-bottom: 60px;
     }
     .cs_logo {
         margin-bottom: 20px;
     }
     .company_desc {
-        padding: 10px 18px;
+        padding: 55px 18px;
     }
     .nom_item {
         margin-bottom: 10px;
@@ -2367,7 +2372,7 @@ p.cdd span {
         height: auto !important;
     }
     .column_first .cf_item:first-child {
-        margin-top: 84px;
+        /* margin-top: 84px; */
     }
     .lr_active .inn_contr:before {
         left: -131px;
@@ -2424,6 +2429,9 @@ p.cdd span {
     }
     .team_slider {
         margin-top: 20px;
+    }
+    .kostolneda:hover {
+        cursor:pointer;
     }
 }
 @media screen and (max-width:1199px){
@@ -2772,8 +2780,9 @@ p.cdd span {
         transform: none;
         right: auto;
         display: block;
-        margin-top: 6px;
+        margin-top: 30px;
         padding-left: 0;
+        width: 100%;
     }
     .grl_item {
         width: auto;
@@ -3327,5 +3336,8 @@ p.cdd span {
     }
     .team_title {
         margin-top: 20px;
+    }
+    .opacity_block {
+        width: 100%;
     }
 }

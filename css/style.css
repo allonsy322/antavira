@@ -1772,6 +1772,8 @@ ul.selected_lang li.l_active:hover {
     margin-bottom: 30px;
     display: inline-block;
     width: calc(100% - 195px - 32px);
+    padding: 5px;
+    border: 1px dashed #939393;
 }
 .cash {
     font-size: 25px;
@@ -1786,6 +1788,7 @@ ul.selected_lang li.l_active:hover {
 .priv {
     font-size: 25px;
     font-weight: 400;
+    text-transform: uppercase;
 }
 .rece {
     font-size: 51px;
